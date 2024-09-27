@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Cancion
+comment1.params=
+comment1.target=Cancion()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Cancion\r\n
+comment2.params=valorNombre
+comment2.target=void\ setNombre(java.lang.String)
+comment3.params=valorDuracion
+comment3.target=void\ setDuracion(float)
+numComments=4

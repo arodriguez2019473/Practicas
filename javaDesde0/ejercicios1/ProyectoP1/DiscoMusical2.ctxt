@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=DiscoMusical2
+comment1.params=
+comment1.target=DiscoMusical2()
+comment2.params=valorNombre
+comment2.target=void\ setNombre(java.lang.String)
+comment3.params=tiempo
+comment3.target=float\ tiempoCancion(float)
+comment4.params=nombreCancion\ duracionCancion
+comment4.target=void\ addCancion(java.lang.String,\ float)
+comment5.params=
+comment5.target=double\ getTiempo()
+comment6.params=
+comment6.target=double\ getResultado()
+comment7.params=
+comment7.target=java.lang.String\ getNombre()
+numComments=8

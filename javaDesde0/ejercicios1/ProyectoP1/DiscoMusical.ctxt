@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=DiscoMusical
+comment1.params=
+comment1.target=DiscoMusical()
+comment10.params=
+comment10.target=java.lang.String\ getFormato()
+comment11.params=
+comment11.target=boolean\ getDigital()
+comment2.params=valorTitulo
+comment2.target=void\ setTitulo(java.lang.String)
+comment3.params=valorAutor
+comment3.target=void\ setAutor(java.lang.String)
+comment4.params=valorA\u00F1oEdicion
+comment4.target=void\ setA\u00F1oEdicion(int)
+comment5.params=valorFormato
+comment5.target=void\ setFormato(java.lang.String)
+comment6.params=valorDigital
+comment6.target=void\ setDigital(boolean)
+comment7.params=
+comment7.target=java.lang.String\ getTitulo()
+comment8.params=
+comment8.target=java.lang.String\ getAutor()
+comment9.params=
+comment9.target=int\ geta\u00F1oEdicion()
+numComments=12
