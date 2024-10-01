@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ExponenciadorApiJava
+comment1.params=
+comment1.target=ExponenciadorApiJava()
+comment2.params=m\ n
+comment2.target=double\ potenciaApiJava(int,\ int)
+numComments=3

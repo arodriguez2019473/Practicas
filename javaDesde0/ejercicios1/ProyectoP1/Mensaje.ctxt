@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Mensaje
+comment1.params=remitente\ para\ texto
+comment1.target=Mensaje(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=remitente
+comment2.target=void\ setRemitente(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ extraerFraccionTexto()
+numComments=4

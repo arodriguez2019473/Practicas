@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Combinador
+comment0.text=Ejemplo\ -\ aprenderaprogramar.com
+comment1.params=
+comment1.target=Combinador()
+comment2.params=valor_texto1\ valor_texto2
+comment2.target=java.lang.String\ Combinacion(java.lang.String,\ java.lang.String)
+comment3.params=valor_texto1\ valor_texto2
+comment3.target=java.lang.String\ CombinadoSiempre(java.lang.String,\ java.lang.String)
+numComments=4

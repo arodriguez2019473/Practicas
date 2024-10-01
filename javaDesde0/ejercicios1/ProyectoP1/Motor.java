@@ -6,11 +6,26 @@ public class Motor{
     
     public Motor(){
         
-        tipoBomba = 2;
+        tipoBomba = 1;
         tipoFluido = "coco";
         combustible = "turbo";
         
     }
+    
+    public boolean dimeSiMotorEsParaAgua(){
+    
+        boolean motorEsParaAgua = false;
+        
+        if(tipoBomba == 1){
+        
+            motorEsParaAgua = true;
+        }
+        
+        return motorEsParaAgua;
+    }
+    
+    
+    
     
     public void dimeTipoMotor(){
         

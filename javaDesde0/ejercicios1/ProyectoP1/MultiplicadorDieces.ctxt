@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=MultiplicadorDieces
+comment1.params=
+comment1.target=MultiplicadorDieces()
+comment2.params=a\ b
+comment2.target=double\ multiplicarPorDieces(double,\ int)
+numComments=3

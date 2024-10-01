@@ -9,11 +9,20 @@ public class Taxi{ //El nombre de la clase
     public Taxi(){
         
         ciudad = "Guatemala";
-        matricula = "";
+        matricula = "Foc2813";
         distrito = "Desconocido";
-        tipoMotor = 0;
+        tipoMotor = 2;
         
     } //Cierre del constructor ... el codigo continua
+    
+    public Taxi(String valorMatricula, String valorDistrito, int valorTipoMotor){
+    
+        ciudad = "Guatemala";
+        matricula = valorMatricula;
+        distrito = valorDistrito;
+        tipoMotor = valorTipoMotor;
+        
+    }
     
     //Metodo para establecer la matricula de un taxi
     public void setMatricula(String valorMatricula){
@@ -39,7 +48,7 @@ public class Taxi{ //El nombre de la clase
     public String getMatricula() {return matricula;} //Cierre del metodo
     
     //Metodo para obtener el distrito del objeto taxi
-    public String geteDistrito() {return distrito;}//Cierre del metodo
+    public String getDistrito() {return distrito;}//Cierre del metodo
     
     //Metodo para obtener el tipo de motor del objeto taxi
     public int getTipoMotor() {return tipoMotor;}//Cierre del metodo

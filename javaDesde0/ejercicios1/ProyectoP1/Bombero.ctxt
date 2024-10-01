@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Bombero
+comment1.params=valorNombre\ valorApellido\ valorEdad\ valorCasado\ valorEspecialista
+comment1.target=Bombero(java.lang.String,\ java.lang.String,\ int,\ boolean,\ boolean)
+comment2.params=
+comment2.target=java.lang.String\ getNombre()
+comment3.params=
+comment3.target=java.lang.String\ getApellido()
+comment4.params=
+comment4.target=int\ getEdad()
+comment5.params=
+comment5.target=boolean\ getCasado()
+comment6.params=
+comment6.target=boolean\ getEspecialista()
+numComments=7

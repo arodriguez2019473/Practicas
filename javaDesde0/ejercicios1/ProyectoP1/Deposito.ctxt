@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Deposito
+comment0.text=Esta\ clase\ representa\ un\ \ dep\u00F3sito\ cil\u00EDndrico\ donde\ se\ almacena\ aceite
+comment1.params=
+comment1.target=Deposito()
+comment2.params=valor_diametro\ valor_altura\ valor_idDeposito
+comment2.target=Deposito(float,\ float,\ java.lang.String)
+comment3.params=valor_idDeposito\ valor_diametro\ valor_altura
+comment3.target=void\ setValoresDeposito(java.lang.String,\ float,\ float)
+comment4.params=
+comment4.target=float\ getDiametro()
+comment5.params=
+comment5.target=float\ getAltura()
+comment6.params=
+comment6.target=java.lang.String\ getIdDeposito()
+comment7.params=
+comment7.target=float\ valorCapacidad()
+numComments=8

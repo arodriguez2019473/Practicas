@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=nose
+comment1.params=
+comment1.target=nose()
+comment2.params=valor_text1\ valor_text2\ valor_text3
+comment2.target=java.lang.String\ combinacion(java.lang.String,\ java.lang.String,\ java.lang.String)
+numComments=3

@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=ListaCantantesFamosos
+comment1.params=nombre\ entradaFamosos
+comment1.target=ListaCantantesFamosos(java.lang.String,\ java.lang.String)
+comment10.params=posicion
+comment10.target=void\ removeNombre(int)
+comment2.params=
+comment2.target=void\ ingresarFamosos()
+comment3.params=
+comment3.target=void\ pedirFamosos()
+comment4.params=
+comment4.target=java.lang.String\ getEntrada()
+comment5.params=
+comment5.target=java.lang.String\ getPars()
+comment6.params=
+comment6.target=int\ getLongitud()
+comment7.params=nombreDeFamosos
+comment7.target=void\ addNombre(java.lang.String)
+comment8.params=posicion
+comment8.target=java.lang.String\ getNombre(int)
+comment9.params=
+comment9.target=int\ getTama\u00F1o()
+numComments=11

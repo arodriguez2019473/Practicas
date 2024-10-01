@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=CocinaCasa
+comment1.params=
+comment1.target=CocinaCasa()
+comment2.params=valorEsIndependiente\ valorNumeroDeFuegos
+comment2.target=CocinaCasa(boolean,\ int)
+comment3.params=
+comment3.target=boolean\ getEsIndependiente()
+comment4.params=
+comment4.target=int\ getNumeroDeFuegos()
+numComments=5

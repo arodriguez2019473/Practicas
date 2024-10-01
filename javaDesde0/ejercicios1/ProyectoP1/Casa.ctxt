@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Casa
+comment1.params=
+comment1.target=Casa()
+comment2.params=valorsuperficie\ valordireccion\ objetoSalonCasa\ objetoCocina
+comment2.target=Casa(double,\ java.lang.String,\ SalonCasa,\ CocinaCasa)
+numComments=3

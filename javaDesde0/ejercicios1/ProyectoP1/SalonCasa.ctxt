@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=SalonCasa
+comment1.params=
+comment1.target=SalonCasa()
+comment2.params=valorNumeroDeTelevisores\ valorTipoSalon
+comment2.target=SalonCasa(int,\ java.lang.String)
+comment3.params=
+comment3.target=int\ getNumeroDeTelevisores()
+comment4.params=
+comment4.target=java.lang.String\ getTipoSalon()
+numComments=5

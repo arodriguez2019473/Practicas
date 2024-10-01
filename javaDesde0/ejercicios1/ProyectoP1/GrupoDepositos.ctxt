@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=GrupoDepositos
+comment0.text=Esta\ clase\ \ representa\ un\ conjunto\ de\ dep\u00F3sitos\ formado\ por\ entre\ 2\ y\ 3\ dep\u00F3sitos
+comment1.params=numeroDeDepositosGrupo\ valor_idGrupo
+comment1.target=GrupoDepositos(int,\ java.lang.String)
+comment2.params=
+comment2.target=int\ getNumeroDepositosGrupo()
+comment3.params=
+comment3.target=java.lang.String\ getIdGrupo()
+comment4.params=
+comment4.target=float\ capacidadDelGrupo()
+numComments=5

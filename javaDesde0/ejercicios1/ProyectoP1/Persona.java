@@ -13,5 +13,16 @@ public class Persona{
         numeroDocumentoIdentidad = "123456789";
         
     }
+
+    
+    public Persona (String valorNombre){
+    
+        nombre = valorNombre;
+    
+    }   
+    
+    
+    public String getNombre(){return nombre;}
+    
     
 }

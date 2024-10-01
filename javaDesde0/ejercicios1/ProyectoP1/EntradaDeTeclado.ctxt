@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=EntradaDeTeclado
+comment1.params=
+comment1.target=EntradaDeTeclado()
+comment2.params=
+comment2.target=void\ pedirEntrada()
+comment3.params=
+comment3.target=java.lang.String\ getEntrada()
+comment4.params=
+comment4.target=java.lang.String\ getPrimeraPalabra()
+comment5.params=
+comment5.target=int\ getLongitud()
+numComments=6

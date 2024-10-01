@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ListaNombres
+comment1.params=nombre
+comment1.target=ListaNombres(java.lang.String)
+comment2.params=valor_nombre
+comment2.target=void\ addNombre(java.lang.String)
+comment3.params=posicion
+comment3.target=java.lang.String\ getNombre(int)
+comment4.params=
+comment4.target=int\ getTama\u00F1o()
+comment5.params=posicion
+comment5.target=void\ removeNombre(int)
+numComments=6

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Exponenciador
+comment1.params=
+comment1.target=Exponenciador()
+comment2.params=m\ n
+comment2.target=int\ potencialterado(int,\ int)
+comment3.params=m\ n
+comment3.target=int\ potenciaConRecursion(int,\ int)
+numComments=4
