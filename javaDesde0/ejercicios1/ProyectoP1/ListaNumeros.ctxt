@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ListaNumeros
+comment1.params=
+comment1.target=ListaNumeros()
+comment2.params=
+comment2.target=java.lang.Integer\ sumatorio()
+comment3.params=item
+comment3.target=void\ a\u00F1adirItem(java.lang.Integer)
+numComments=4

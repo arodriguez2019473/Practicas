@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=SerieDeAleatorios
+comment1.params=numeroItems
+comment1.target=SerieDeAleatorios(int)
+comment2.params=
+comment2.target=int\ getNumeroItems()
+comment3.params=
+comment3.target=void\ generarSerieDeAleatorios()
+comment4.params=
+comment4.target=void\ mostrarSerie()
+numComments=5

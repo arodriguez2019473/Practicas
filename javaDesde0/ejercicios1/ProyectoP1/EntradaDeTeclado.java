@@ -38,8 +38,5 @@ public class EntradaDeTeclado{
     
     public int getLongitud(){
         return entradaTeclado.length();
-    }
-    
-    
-    
+    } 
 }

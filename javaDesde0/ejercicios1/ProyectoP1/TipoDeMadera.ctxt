@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=TipoDeMadera
+comment1.params=color\ pesoEspecifico
+comment1.target=TipoDeMadera(java.lang.String,\ int)
+comment1.text=\r\n\ Constructor.\ Al\ asignarle\ uno\ de\ los\ valores\ posibles\ a\ una\ variable\ del\ tipo\ enumerado\ el\ constructor\ asigna\ \r\n\ \ \ \ \ \ \ \ autom\u00E1ticamente\ valores\ de\ los\ campos\r\n
+comment2.params=
+comment2.target=java.lang.String\ getColor()
+comment3.params=
+comment3.target=int\ getPesoEspecifico()
+numComments=4

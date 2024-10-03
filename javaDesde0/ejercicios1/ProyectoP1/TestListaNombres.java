@@ -16,7 +16,9 @@ public class TestListaNombres{
         System.out.println("Gracias");
         
         ListaNombres lista1 = new ListaNombres("Nombres introducidos por usuario");
-        lista1.addNombre(entrada1.getEntrada()); lista1.addNombre(entrada2.getEntrada());
+        
+        lista1.addNombre(entrada1.getEntrada()); 
+        lista1.addNombre(entrada2.getEntrada());
         lista1.addNombre(entrada3.getEntrada());
         
         System.out.println("La lista ha quedado formada por " + lista1.getTamaño()+" elementos");

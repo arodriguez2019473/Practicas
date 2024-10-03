@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=EntradaDeTeclado1
+comment1.params=
+comment1.target=EntradaDeTeclado1()
+comment2.params=
+comment2.target=void\ pedirEntrada()
+comment3.params=
+comment3.target=java.lang.String\ getEntrada()
+numComments=4

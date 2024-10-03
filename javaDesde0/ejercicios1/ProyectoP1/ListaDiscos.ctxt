@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ListaDiscos
+comment1.params=dico
+comment1.target=ListaDiscos(java.lang.String)
+comment2.params=discoConMasDeVentas
+comment2.target=void\ addDico(java.lang.String)
+comment3.params=posicion
+comment3.target=java.lang.String\ getDico(int)
+comment4.params=
+comment4.target=int\ getTama\u00F1odico()
+comment5.params=posicion
+comment5.target=void\ removeDico(int)
+numComments=6
