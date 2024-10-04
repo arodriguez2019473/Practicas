@@ -5,7 +5,6 @@ class Taxi:
     distrito: str = None
     tipoMotor: int = 0
 
-
     def __init__(self,ciudad:str,matricula:str,distrito:str,tipoMotor:int):
         self.ciudad = ciudad
         self.matricula = matricula
@@ -28,16 +27,16 @@ class Taxi:
         self.distrito = distrito
 
     def setTipoMotor(self, tipoMotor: int):
-        tipoMotor = input("Ingrese el tipo de motor nuevo:")
+        tipoMotor = int(input("Ingrese el tipo de motor nuevo:"))
         self.tipoMotor = tipoMotor
 
-taxi = Taxi(None,None,None,0)
-taxi.Taxi(taxi.ciudad,taxi.matricula,taxi.distrito,taxi.tipoMotor)
+# taxi = Taxi(None,None,None,0)
+# taxi.Taxi(taxi.ciudad,taxi.matricula,taxi.distrito,taxi.tipoMotor)
 
-taxi.setmatricula(taxi.matricula)
-taxi.setDistrito(taxi.distrito)
-taxi.setTipoMotor(taxi.tipoMotor)
+# taxi.setmatricula(taxi.matricula)
+# taxi.setDistrito(taxi.distrito)
+# taxi.setTipoMotor(taxi.tipoMotor)
 
-print(taxi.matricula)
-print(taxi.distrito)
-print(taxi.tipoMotor)
+# print(taxi.matricula)
+# print(taxi.distrito)
+# print(taxi.tipoMotor)

@@ -18,6 +18,6 @@ class Persona:
         nombre = input("Ingresa el nuevo nombre:")
         self.nombre = nombre
     
-persona = Persona(None,None,0,False,0)
-persona.setNombre(persona.nombre)
-print(persona.nombre)
+# persona = Persona(None,None,0,False,0)
+# persona.setNombre(persona.nombre)
+# print(persona.nombre)
