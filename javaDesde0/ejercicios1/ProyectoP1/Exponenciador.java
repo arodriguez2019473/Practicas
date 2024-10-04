@@ -1,4 +1,3 @@
-
 public class Exponenciador{
 
     public Exponenciador(){

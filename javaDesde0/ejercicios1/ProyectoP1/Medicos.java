@@ -21,7 +21,6 @@ public class Medicos
     }
     
     
-    
 // este es el ejercicio 2   
 // ------------------------------------------------------------------------ 
     public void calculoParaMultiploEdad(){

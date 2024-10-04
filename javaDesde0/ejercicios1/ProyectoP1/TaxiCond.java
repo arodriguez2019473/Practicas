@@ -17,11 +17,9 @@ public class TaxiCond{
         
     }
     
-    
     public void setMatricula(String valorMatricula){vehiculoTaxi.setMatricula(valorMatricula);}
     
     //Metodo que devuelve la informacion sobre el objeto TaxiCond
-    
     public String getDatosTaxiCond(){
     
         String matricula = vehiculoTaxi.getMatricula();
