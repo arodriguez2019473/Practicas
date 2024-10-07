@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo</title>
+
+</head>
+    <body>
+
+        <font color = "red"><p>texto de Ejemplo para vizualizar</p></font>
+        <br><br>
+      
+        <p>Negrita: <strong>texto en negrita</strong></p>
+        <p>Italica: <i>texto de Italica</i></p>
+        <p>Tachado: <strike>texto Tachado</strike></p>
+        <p>Color fuente: <font color = "green">este es el color verde</font></p>
+
+        <br><br>
+        <script>
+
+            var txt = "Texto ramdom"
+
+            document.write("<p>Negrita" + txt.bold()+"</p>")
+            document.write("<p>Itálica: " + txt.italics() + "</p>");
+            document.write("<p>Tachado: " + txt.strike() + "</p>");
+            document.write("<p>Color fuente: " + txt.fontcolor("green") + "</p>");
+
+        </script>
+
+    </body>
+</html>

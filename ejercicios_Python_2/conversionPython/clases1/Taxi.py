@@ -27,8 +27,23 @@ class Taxi:
         self.distrito = distrito
 
     def setTipoMotor(self, tipoMotor: int):
-        tipoMotor = int(input("Ingrese el tipo de motor nuevo:"))
+
+        print("Ingrese el numero 1 o 2")
+        print("1) motor a disel")
+        print("2) motor electrico")
+        tipoMotor = int(input("Ingrese el motor:"))
+
+        if tipoMotor == 1:
+            tipoMotor: str = "motor a disel"
+        elif tipoMotor == 2:
+            tipoMotor: str = "motor electrico"
+        else :
+            print("debe elegir entre 1 y 2")
+
         self.tipoMotor = tipoMotor
+
+    
+
 
 # taxi = Taxi(None,None,None,0)
 # taxi.Taxi(taxi.ciudad,taxi.matricula,taxi.distrito,taxi.tipoMotor)

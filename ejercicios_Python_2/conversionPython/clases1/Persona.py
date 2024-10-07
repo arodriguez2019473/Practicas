@@ -1,5 +1,5 @@
 class Persona:
-
+    
     nombre: str = None
     apellidos: str = None
     edad: int = 0
@@ -16,6 +16,13 @@ class Persona:
 
     def setNombre(self,nombre:str):
         nombre = input("Ingresa el nuevo nombre:")
+        
+        while nombre == True:
+            if nombre.isalpha():
+                pass
+            else:
+                print("es numero vuelve a intentarlo")
+
         self.nombre = nombre
     
 # persona = Persona(None,None,0,False,0)
