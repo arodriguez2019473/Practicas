@@ -1,0 +1,33 @@
+<div class="container">
+  <h3>Estos son los chistes</h3>
+  <div class="table-responsive">
+    <table id="table_id" class="table">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Categorías</th>
+          <th>Fecha de creación</th>
+          <th>Icono URL</th>
+          <th>ID</th>
+          <th>Última actualización</th>
+          <th>URL</th>
+          <th>value</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for(item of data; track $index){
+        <tr>
+          <td class="text-center">{{ $index + 1 }}</td>
+          <td>{{ item.categories }}</td>
+          <td>{{ item.created_at }}</td>
+          <td><img [src]='item.icon_url'></td>
+          <td>{{ item.id }}</td>
+          <td>{{ item.updated_at }}</td>
+          <td>{{ item.url }}</td>
+          <td>{{ item.value }}</td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>
