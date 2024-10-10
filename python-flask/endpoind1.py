@@ -11,7 +11,7 @@ port = 5000
 def test():
     a = []
     b = set()
-    rango = 4
+    rango = 1
     while len(b) < rango: 
         response = requests.get("https://api.chucknorris.io/jokes/random")
         if response.status_code == 200:

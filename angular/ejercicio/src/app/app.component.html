@@ -1,49 +1,62 @@
-<div class="bg-white scroll-p-20 rounded-8 border-collapse shadow-[0_2_10_rgb(0,0,0,0.1)] sm:text-center "  >
-  <h3 
-    class="
-      text-center  
-    text-stone-950  
-      font-mono">
+<div class="bg-white rounded-8 sm:text-center "  >
+  <h3 class="text-center text-stone-950 font-mono">
     Estos son los chistes</h3>
   
-  <div class="overflow-auto">
+  <div class="hidden md:visible">
     
-    <table class=" ms-16 my-16 me-16 w-5/5 border-separate border-2 border-stone-950 scroll-ps-6">
+    <div class="">
+      <table class="ms-16 me-16 w-5/5 table-auto w-ful border-separate border-2 border-stone-950">
       
-      <thead class="shadow-md"> 
+        <thead class="shadow-md">
       
-        <tr>
-          <th class="border border-slate-500 bg-zinc-900 text-gray-50">No.</th>
-          <th class="border border-slate-500 bg-zinc-900 text-gray-50">Categorías</th>
-          <th class="border border-slate-500 bg-zinc-900 text-gray-50">Fecha de creación</th>
-          <th class="border border-slate-500 bg-zinc-900 text-gray-50">Icono URL</th>
-          <th class="border border-slate-500 bg-zinc-900 text-gray-50">ID</th>
-          <th class="border border-slate-500 bg-zinc-900 text-gray-50">Última actualización</th>
-          <th class="border border-slate-500 bg-zinc-900 text-gray-50">URL</th>
-          <th class="border border-slate-500 bg-zinc-900 text-gray-50">value</th>
-        </tr>
+          <tr>
+            <th class="border border-slate-500 bg-zinc-900 text-gray-50">No.</th>
+            <th class="border border-slate-500 bg-zinc-900 text-gray-50">Categorías</th>
+            <th class="border border-slate-500 bg-zinc-900 text-gray-50">Fecha de creación</th>
+            <th class="border border-slate-500 bg-zinc-900 text-gray-50">Icono URL</th>
+            <th class="border border-slate-500 bg-zinc-900 text-gray-50">ID</th>
+            <th class="border border-slate-500 bg-zinc-900 text-gray-50">Última actualización</th>
+            <th class="border border-slate-500 bg-zinc-900 text-gray-50">URL</th>
+            <th class="border border-slate-500 bg-zinc-900 text-gray-50">value</th>
+          </tr>
       
-      </thead>
-
-      <tbody class="shadow-md">
-        
-        @for(item of data; track $index){
-          <!-- <tr [ngClass]="$index % 2 === 0 ? 'bg-white' : 'bg-slate-400'"> -->
-        
-        <tr class="odd:bg-slate-400 even:bg-white">
-          <td class="text-center border border-slate-950">{{ $index + 1 }}</td>
-          <td class="border border-slate-950 {bg-white : bg-red-600}"> {{ item.categories }}</td>
-          <td class="border border-slate-950">{{ item.created_at }}</td>
-          <td class="border border-slate-950"><img [src]='item.icon_url'></td>
-          <td class="border border-slate-950">{{ item.id }}</td>
-          <td class="border border-slate-950">{{ item.updated_at }}</td>
-          <td class="border border-slate-950">{{ item.url }}</td>
-          <td class="border border-slate-950 shrink w-64 h-14">{{ item.value }}</td>
-        
-        </tr>
-    
-        }
-      </tbody>
-    </table>
+        </thead>
+        <tbody class="shadow-md">
+      
+          @for(item of data; track $index){
+            <!-- <tr [ngClass]="$index % 2 === 0 ? 'bg-white' : 'bg-slate-400'"> -->
+      
+          <tr class="odd:bg-slate-400 even:bg-white">
+            <td class="text-center border border-slate-950">{{ $index + 1 }}</td>
+            <td class="border border-slate-950 {bg-white : bg-red-600}"> {{ item.categories }}</td>
+            <td class="border border-slate-950">{{ item.created_at }}</td>
+            <td class="border border-slate-950"><img [src]='item.icon_url'></td>
+            <td class="border border-slate-950">{{ item.id }}</td>
+            <td class="border border-slate-950">{{ item.updated_at }}</td>
+            <td class="border border-slate-950">{{ item.url }}</td>
+            <td class="border border-slate-950 overflow-x-auto">{{ item.value }}</td>
+      
+          </tr>
+      
+          }
+        </tbody>
+      </table>
+    </div>
   </div>
+  <ul class="visible md:invisible">
+    @for(item of data; track $index){
+      <!-- <li class="border border-slate-950 mb-2 p-4 bg-gray-100 rounded"> -->
+        
+        <li>{{ $index + 1 }})</li>
+        <li>{{ item.categories }}</li>
+        <li>{{ item.created_at }}</li>
+        <li><img [src]='item.icon_url'></li>
+        <li>{{ item.id }}</li>
+        <li>{{ item.updated_at }}</li>
+        <li>{{ item.url }}</li>
+        <li>{{ item.value }}</li>
+
+    }
+  </ul>
+
 </div>
