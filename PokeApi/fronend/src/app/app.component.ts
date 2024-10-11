@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ServiceService } from './service.service';
 import { CommonModule } from '@angular/common';
+import { privateDecrypt } from 'node:crypto';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  title = '   ';
+  title = 'fronend';
   data: any;
 
   constructor(
@@ -24,9 +25,14 @@ export class AppComponent implements OnInit {
         this.data = res
       },
     })
-
-
-  }
+  
+    // this.pokensSvc.getResult().subscribe({
+    //   next:(res) => {
+    //     this.data = res
+    //   },
+    // }) 
+  
+  }  
 
 }
 

@@ -1,0 +1,26 @@
+<div class="bg-slate-600 md:grid-cols-2 lg:grid-cols-3 gap-5 flex p-6 justify-center">
+
+  <P class="text-rose-50">POKEAPI</P>
+
+</div>
+
+
+
+<div class="m-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+  @for(item of data; track $index) {
+
+    <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+     
+      <img class="object-cover w-full h-48 rounded-t-lg" src="./img/1.png">
+      <div class="flex flex-col justify-between p-4 leading-normal">
+     
+        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">{{ item.name }}</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">No: {{ $index + 1 }}</p>
+
+      </div>
+    
+    </a>
+  }
+
+  
+</div>
