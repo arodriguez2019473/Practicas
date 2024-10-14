@@ -1,4 +1,4 @@
-<div class="bg-slate-600 md:grid-cols-2 lg:grid-cols-3 gap-5 flex p-6 justify-center">
+<div class="bg-slate-600 flex p-6 justify-center">
 
   <P class="text-rose-50">POKEAPI</P>
 
@@ -9,14 +9,14 @@
 <div class="m-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
   @for(item of data; track $index) {
 
-    <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <a class="flex flex-col items-center bg-white border shadow dark:border-gray-700 dark:bg-gray-800">
+      <!-- object-cover -->
+      <img class=" w-full h-48 rounded-t-lg" [src]="item.url">
+      <div class="flex flex-col justify-between p-4">
      
-      <img class="object-cover w-full h-48 rounded-t-lg" src="./img/1.png">
-      <div class="flex flex-col justify-between p-4 leading-normal">
-     
-        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">{{ item.name }}</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">No: {{ $index + 1 }}</p>
-
+        <h5 class="mb-2 text-xl font-bold dark:text-white">{{ item.name }}</h5>
+        <p class="mb-3 text-gray-700 dark:text-gray-400">No: {{ $index + 1 }}</p>
+        <button type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">ver detalles</button>
       </div>
     
     </a>

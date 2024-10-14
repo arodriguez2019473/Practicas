@@ -1,89 +1,47 @@
 from flask import Flask, jsonify, request
 import requests
+import uuid
 
 app = Flask(__name__)
 port = 5000
 
-
 URL = "https://pokeapi.co/api/v2/pokemon"
-response = requests.get(URL)
-data = response.json()
 
 @app.route('/pokens', methods=['GET'])
 def getpokes():
 
+    response = requests.get(URL)
+    data = response.json()
+
+    # Extraigas una lista de 10 pokemones
+    # luego devolvas la lsita de los 10 pokemones
+    
     queryparams = request.args
     limit = queryparams.get('limit',default=10, type=int)
+    results = data['results'][0:limit:1]
+# [1:limit:1]
 
-    results = data['results'][:limit]
-    
+    # luego extraigas cada uno de los datos de los pokemones
+
+    detalles = results['url']
+
+    # response1 = requests.get(details)
+
+    # data1 = response1.json()
+
+    # print(data1)
+
     return jsonify(results), 200
-
-
-
-# @app.route('/', methods=['GET'])
-# def home_resource():
-    
-#     queryparams = request.args
-#     print(queryparams)
-    
-#     return jsonify(queryparams), 200
-
-# @app.route('/pokenresult', methods=['GET'])
-
-# def getresult():
-
-#     result = []
-
-#     result1: int = data['results']
-
-#     result.append(result1)
-
-#     return jsonify(result), 200
-
-
-# @app.route('/xp', methods=['GET'])
-
-# def getxp():
-
-#     xp = []
-
-#     xp1:int = data['base_experience']
-#     xp.append(xp1)
-
-#     return jsonify(xp), 200
-
-# @app.route('/cria', methods=['GET'])
-    
-# def getcries():
-
-#     crias = []
-
-#     cria1:int = data['cries']
-#     crias.append[cria1]
-
-#     return jsonify(crias), 200
-
-# @app.route('/forms', methods=['GET'])
-# def getforms(): 
-
-#     forms = []
-
-#     form1:str = data['forms']
-#     forms.append[form1]
-
-#     return jsonify(forms), 200
-
-# @app.route('/gameInd', methods=['GET'])
-# def getgameInd():
-
-#     gameind = []
-
-#     gamein1:str = data['game_indices']
-#     gameind.append[gamein1]
-
-#     return jsonify(gameind), 200
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True, port=port)  
+
+
+@app.route('/details', methods=['GET'])
+def getdetails():
+
+    response = requests.get(URL)
+    data = response.json()
+    results = data['url']
+
+    return jsonify(results), 200
