@@ -78,3 +78,63 @@
 
 #     exampl.append(new_poke)
 #     return jsonify(exampl),201
+
+
+
+
+
+
+
+
+
+    # mostrar el pokemon y sus detalles
+        # test1 = URL2[0]
+        
+        # response2 = requests.get(test1)
+        # data2 = response2.json()
+
+        # details: str = data2
+
+
+        # return jsonify(results ,details), 200
+
+# @app.route('/details', methods=['GET'])
+# def getdetails():
+
+#     response = requests.get(URL)
+#     data = response.json()
+#     results = data['url']
+
+#     return jsonify(results), 200
+
+
+from flask import Flask, jsonify, request
+import requests
+import uuid
+
+app = Flask(__name__)
+port = 5000
+
+URL = "https://pokeapi.co/api/v2/pokemon"
+
+@app.route('/pokens', methods=['GET'])
+def getpokes():
+    response = requests.get(URL)
+    data = response.json()
+
+    queryparams = request.args
+    limit = queryparams.get('limit', default=10, type=int)
+
+    results = data['results'][0:limit]
+
+    pokemon_details = []
+    for result in results:
+        pokemon_url = result['url']
+        response2 = requests.get(pokemon_url)
+        pokemon_data = response2.json()
+        pokemon_details.append(pokemon_data)
+
+    return jsonify({'results': results, 'details': pokemon_details}), 200
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', debug=True, port=port)
