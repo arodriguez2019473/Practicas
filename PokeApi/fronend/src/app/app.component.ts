@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { ServiceService } from './service.service';
 import { CommonModule } from '@angular/common';
 import { privateDecrypt } from 'node:crypto';
+import { url } from 'node:inspector';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,11 @@ import { privateDecrypt } from 'node:crypto';
 export class AppComponent implements OnInit {
   title = 'fronend';
   data: any;
+
+  addToCart() {
+    url
+  }
+
 
   constructor(
     private pokensSvc: ServiceService

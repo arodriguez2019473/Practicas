@@ -16,14 +16,12 @@ def getpokes():
     # Extraigas una lista de 10 pokemones
     
     queryparams = request.args
-    limit = queryparams.get('limit',default=20, type=int)
+    limit = queryparams.get('limit',default=5, type=int)
 
     results: str = data['results'][0:limit]
 
     # luego extraigas cada uno de los datos de los pokemones
     pokens = []
-    moventl = []
-    versionGame = []
 
     for i in results:
 
@@ -31,29 +29,62 @@ def getpokes():
         data = requests.get(details)
         pokemonData = data.json()
 
+        img:str = pokemonData['sprites']
         names:str = pokemonData['name']
         movent1:str = pokemonData['moves']
         gameversion:str = pokemonData['game_indices']
 
+
+
+        moventl = []
+        versionl = []
+        # imagenl = []
+        contador = 0
+
+        # for i in img:
+
+        #     imgurl = i['front_default']
+        #     imagenl.append(imgurl)
+            
+        #     contador += 1
+        #     # print(contador)
+
+        #     if contador == 1:
+        #         contador = 0
+        #         break                
+
         for i in movent1:
-
-            contador = len(moventl)
-
-            print(contador)
 
             movent = i['move']
             moventl.append(movent)
+            
+            contador += 1
+            # print(contador)
 
-            if 3 <= contador:
+            if contador == 3:
+                contador = 0
                 break
-        pokens.append([names,moventl])    
+        
+        for i in gameversion:
 
-        # for i in gameversion:
+            version = i['version']
+            versionl.append(version)
+        
+            contador += 1
 
-        #     version = i['version']
-        #     versionGame.append(version)
+            print(contador)
+            if contador == 3:
+                break
+            
+        poken = {
+            'name': names,
+            # 'imagen': imagenl,
+            'versions': versionl,
+            'movements': moventl
+        }
 
-    # imprimis a los pokemones con sus datos
+        pokens.append(poken)
+                
 
     return jsonify(pokens),200
 
