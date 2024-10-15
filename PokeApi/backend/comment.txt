@@ -81,12 +81,6 @@
 
 
 
-
-
-
-
-
-
     # mostrar el pokemon y sus detalles
         # test1 = URL2[0]
         
@@ -112,29 +106,34 @@ from flask import Flask, jsonify, request
 import requests
 import uuid
 
-app = Flask(__name__)
-port = 5000
 
-URL = "https://pokeapi.co/api/v2/pokemon"
+        print(results[0])
+    URL2 = []   
+    i:int = 0
 
-@app.route('/pokens', methods=['GET'])
-def getpokes():
-    response = requests.get(URL)
-    data = response.json()
+    while i < limit: 
+          
+        i += 1
+        print(i)
+        for result in results:
 
-    queryparams = request.args
-    limit = queryparams.get('limit', default=10, type=int)
 
-    results = data['results'][0:limit]
+            details = result['url']
+            response2 = requests.get(details)
+            data2 = response2.json()
+            URL2.append(data2)
+            
 
-    pokemon_details = []
-    for result in results:
-        pokemon_url = result['url']
-        response2 = requests.get(pokemon_url)
-        pokemon_data = response2.json()
-        pokemon_details.append(pokemon_data)
+                
+    return jsonify(results[i-1], URL2[i-1]),200            
+        # datamovent = requests.get(movent1)
+        # pokemovent = datamovent.json()
 
-    return jsonify({'results': results, 'details': pokemon_details}), 200
+        # movent:str = pokemovent['move']
+        # print(movent)
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True, port=port)
+        
+
+        # detallePoke:str = pokemonData
+
+    

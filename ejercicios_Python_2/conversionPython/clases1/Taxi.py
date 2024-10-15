@@ -37,7 +37,7 @@ class Taxi:
             tipoMotor: str = "motor a disel"
         elif tipoMotor == 2:
             tipoMotor: str = "motor electrico"
-        else :
+        else:
             print("debe elegir entre 1 y 2")
 
         self.tipoMotor = tipoMotor

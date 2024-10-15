@@ -16,48 +16,46 @@ def getpokes():
     # Extraigas una lista de 10 pokemones
     
     queryparams = request.args
-    
-    limit = queryparams.get('limit',default=10, type=int)
+    limit = queryparams.get('limit',default=20, type=int)
 
     results: str = data['results'][0:limit]
 
-    contador = len(results)
+    # luego extraigas cada uno de los datos de los pokemones
+    pokens = []
+    moventl = []
+    versionGame = []
 
-        # luego extraigas cada uno de los datos de los pokemones
-    print(results[0])
-    
-    URL2 = []   
-    i:int = 0
+    for i in results:
 
-    while i < contador: 
+        details = i['url']
+        data = requests.get(details)
+        pokemonData = data.json()
 
-        for result in results:
+        names:str = pokemonData['name']
+        movent1:str = pokemonData['moves']
+        gameversion:str = pokemonData['game_indices']
 
+        for i in movent1:
 
-            print(i)
+            contador = len(moventl)
 
-            details = result['url']
-            response2 = requests.get(details)
-            data2 = response2.json()
-            URL2.append(data2)
+            print(contador)
 
+            movent = i['move']
+            moventl.append(movent)
 
-            return jsonify(results[i], URL2),200
+            if 3 <= contador:
+                break
+        pokens.append([names,moventl])    
 
-        # URL2.append(result['url'])
-            
-        # # luego devolvas la lsita de los 10 pokemones
+        # for i in gameversion:
 
-        # print(URL2)
+        #     version = i['version']
+        #     versionGame.append(version)
 
-        # response2 = requests.get(URL2[0])
-        # data2 = response2.json()
+    # imprimis a los pokemones con sus datos
 
-        # details: str = data2
-
-        # # imprimir las listas con los datos de los pokemones        
+    return jsonify(pokens),200
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True, port=port)  
-
-
