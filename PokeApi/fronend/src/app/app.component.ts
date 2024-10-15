@@ -17,7 +17,8 @@ export class AppComponent implements OnInit {
   data: any;
 
   addToCart() {
-    url
+  
+    
   }
 
 
