@@ -9,17 +9,25 @@
 <div class="m-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
   @for(item of data; track $index) {
 
-    <a class="flex flex-col items-center bg-white border shadow dark:border-gray-700 dark:bg-gray-800">
+    <table class="table-fixed">
+      <thead class="bg-white">
+      <tr>
+        <th>Nombre:</th>
+        <th>Version:</th>
+        <th>Movimientos</th>
+      </tr>
+      </thead>
+      
+      <tbody class="bg-gray-600	">
+        <tr>
+          <th>{{item.name}}</th>
+          <th>{{item.versions}}</th>
+        </tr>
+      </tbody>
 
-      <img class="h-48 rounded-t-lg" [src]="item.url">
-      <div class="flex flex-col justify-between p-4 space-y-4 md:flex md:space-y-0 md:space-x-4 rtl:space-x-reverse">
-     
-        <h5 class="mb-2 text-xl font-bold dark:text-white">{{ item.name }}</h5>
-        <p class="mb-3 text-gray-700 dark:text-gray-400">No: {{ $index + 1 }}</p>
-        <button type="button" class="text-gray-900 bg-zinc-600">ver detalles</button>
-      </div>
-    
-    </a>
+
+    </table>
+
   }
 
   
