@@ -1,0 +1,38 @@
+ordenamiento = listado
+ordenamiento_Correcto = listado
+
+ordenamiento = [4,2,8,6,1]
+ordenamiento_Correcto = []
+
+posicion1 = ordenamiento[0]
+posicion2 = ordenamiento[1]
+posicion3 = ordenamiento[2]
+posicion4 = ordenamiento[3]
+posicion5 = ordenamiento[4]
+
+a1 = 0
+a2 = 0
+a3 = 0
+a4 = 0
+a5 = 0
+	action
+		if posicion1 >= posicion2
+			a1 = posicion1
+		elif posicion1 <= posicion2
+			a1 = posicion2
+		elif posicion2 >= posicion3
+			a2 = posicion2
+		elif posicion2 <= posicion3
+			a2 = posicion3
+		elif posicion3 >= posicion4
+			a3 = posicion3
+		elif posicion3 <= posicion4
+			a3 = posicion4
+		elif posicion4 >= posicion5
+			a4 = posicion4
+		elif posicion4 <= posicion5
+			a5 = posicion5
+
+ordenamiento_Correcto.append(a1,a2,a3,a4,a5)
+
+imprimir = ordenamiento_Correcto()

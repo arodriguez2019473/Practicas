@@ -1,0 +1,22 @@
+a = 0
+b = 1
+c = null
+
+lista [0,1]
+
+action
+
+	sumar = (a+b)
+	a = b and b = sumar  
+	
+	listar = ,sumar
+
+repite (action)
+
+
+a = null
+b = null
+c = null
+sumar = null
+
+lista [0,1, null]

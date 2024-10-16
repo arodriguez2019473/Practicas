@@ -27,9 +27,9 @@ def getpokes():
 
         details = i['url']
         data = requests.get(details)
-        pokemonData = data.json()
+        pokemonData:dict = data.json()
 
-        img:str = pokemonData['sprites']
+        img:str = pokemonData.get('sprites', '')
         names:str = pokemonData['name']
         movent1:str = pokemonData['moves']
         gameversion:str = pokemonData['game_indices']

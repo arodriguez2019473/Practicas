@@ -1,0 +1,6 @@
+1) obtener lista
+2) saber cuantos elementos hay en la lista
+3) recorrer la lista
+4) obtener el valor actual y el valor siguiente
+5) si el valor actual es mayor que el valor siguiente: hacer un cambio entre los dos
+8) volver a iniciar el ordenamiento: tantas veces como numeros hay en la lista
