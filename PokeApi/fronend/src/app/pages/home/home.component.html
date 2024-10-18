@@ -1,4 +1,8 @@
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+<link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
+<link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
+<link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
+
+
 <div class="m-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
     @for(item of data; track $index) {
   
@@ -20,7 +24,7 @@
             <th><img [src]="item.imagen"></th>
             <th>
               <nav>
-                <i [routerLink]="['/details', item.name]" class="fa-regular fa-circle-info"></i>
+                <a [routerLink]="['/details', item.name]" class="fa-solid fa-circle-info"></a>
               </nav>
             </th>
           </tr>
@@ -28,7 +32,4 @@
       
       </table> 
     }
-    <button type="submit">
-      <span class="fa-solid fa-envelope" aria-hidden="true"></span> Email Us!
-    </button>
     </div>
