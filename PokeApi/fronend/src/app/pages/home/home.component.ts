@@ -12,12 +12,12 @@ import { RouterModule } from '@angular/router';
 export class HomeComponent implements OnInit {
   data: any;
 
-
   constructor(
     private pokensSvc: ServiceService
   ){ }
 
   ngOnInit(): void{
+
     this.pokensSvc.getPokens().subscribe({
       next:(res) => {
         this.data = res

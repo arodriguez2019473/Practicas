@@ -1,10 +1,11 @@
+<div class="flex justify-center my-7">
+<input class="dark:bg-gray-800 text-gray-700 dark:text-gray-400 dark:border-gray-700 uppercas mb-5" type="button" value="Ver detalles" onclick="location.reload()">
+</div>
 <div class="flex justify-center">
-<div class=" max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 uppercase ">{{ poke.name }}</p>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 uppercase ">{{ poke.movements }}</p>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 uppercase ">{{ poke.versions }}</p>
-    
-    
-</div>
-</div>
+    <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 uppercase">Nombre: {{ poke.name }}</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 uppercase">Movimientos: {{ poke.movements }}</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 uppercase">Version: {{ poke.versions }}</p>
+        <img [src]='poke.imagen' class="bg-center">
+    </div>
+  </div>

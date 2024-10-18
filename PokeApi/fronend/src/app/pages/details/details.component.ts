@@ -1,37 +1,38 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ServiceService } from '../../service.service';
 import { ActivatedRoute } from '@angular/router';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-details',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './details.component.html',
   styleUrl: './details.component.css'
 })
 export class DetailsComponent implements OnInit {
-
-  // aname!: string
-  // aimge!: string
-  // amoviments!: string
-  
-
-  // moviments: any
-  poke: { name: string; movements: string; versions: string } = { name: '', movements: '', versions: '' };
+  poke: any;
 
   constructor(
     private activatedRoute: ActivatedRoute,
-
-  ){}
-
-  ngOnInit(): void {
-
-    this.poke.name = this.activatedRoute.snapshot.params['name'];
-    this.poke.movements = this.activatedRoute.snapshot.params['movements'];
-    this.poke.versions = this.activatedRoute.snapshot.params['versions'];
-
-    //   console.log(this.aname);
-    //   console.log(this.aimge);
-    //   console.log(this.moviments);
-    // };
+    private pokensSvc: ServiceService  
+  ){
+      
   }
+  ngOnInit(): void {
+    this.activatedRoute.params.subscribe(params => {
+      const name = params['name'];
+      this.fetchPokeDetails(name);
+    });
+  }
+
+  fetchPokeDetails(name: string): void {
+    this.pokensSvc.getPokens().subscribe({
+      next: (res) => {
+        this.poke = res.find((poke: any) => poke.name === name);
+        console.log(this.poke)
+      },
+    });
+  }
+
 }
+

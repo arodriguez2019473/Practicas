@@ -1,31 +1,34 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 <div class="m-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
     @for(item of data; track $index) {
   
       <table class="table-fixed" >
+        
         <thead class="bg-white">
-        <tr>
-          <th>Nombre:</th>
-          <th>Imagen</th>
-          <!-- <th>Version:</th> -->
-          <!-- <th>Movimientos</th> -->
-          <th>detalles</th>
-        </tr>
+          <tr>
+            <th>Nombre:</th>
+            <th>Imagen</th>
+            <!-- <th>Version:</th> -->
+            <!-- <th>Movimientos</th> -->
+            <th>detalles</th>
+          </tr>
         </thead>
             
         <tbody class="bg-gray-600	">
           <tr>
             <th>{{item.name}}</th>
             <th><img [src]="item.imagen"></th>
-            <!-- <th>{{item.versions}}</th> -->
-            <!-- <th>{{item.movements}}</th> -->
-            <th><nav>
-              <a [routerLink]="['/details', item.name ,item.movements.join(','), item.versions.join(',')]" class="text-white">Detalles</a>
-            </nav></th>
+            <th>
+              <nav>
+                <i [routerLink]="['/details', item.name]" class="fa-regular fa-circle-info"></i>
+              </nav>
+            </th>
           </tr>
         </tbody>
-      </table>
+      
+      </table> 
     }
-    
-    
-  </div>
-  
+    <button type="submit">
+      <span class="fa-solid fa-envelope" aria-hidden="true"></span> Email Us!
+    </button>
+    </div>
