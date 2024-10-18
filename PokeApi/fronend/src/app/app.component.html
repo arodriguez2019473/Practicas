@@ -3,32 +3,9 @@
   <P class="text-rose-50">POKEAPI</P>
 
 </div>
-
-
-
-<div class="m-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-  @for(item of data; track $index) {
-
-    <table class="table-fixed">
-      <thead class="bg-white">
-      <tr>
-        <th>Nombre:</th>
-        <th>Version:</th>
-        <th>Movimientos</th>
-      </tr>
-      </thead>
-      
-      <tbody class="bg-gray-600	">
-        <tr>
-          <th>{{item.name}}</th>
-          <th>{{item.versions}}</th>
-        </tr>
-      </tbody>
-
-
-    </table>
-
-  }
-
-  
+<div class="flex justify-center my-8">
+<nav>
+  <a href="principal" class="text-white uppercase text-center">Pokens</a>
+</nav>
 </div>
+<router-outlet></router-outlet>

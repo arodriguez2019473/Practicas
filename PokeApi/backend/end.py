@@ -16,7 +16,7 @@ def getpokes():
     # Extraigas una lista de 10 pokemones
     
     queryparams = request.args
-    limit = queryparams.get('limit',default=5, type=int)
+    limit = queryparams.get('limit',default=3, type=int)
 
     results: str = data['results'][0:limit]
 
@@ -25,6 +25,7 @@ def getpokes():
 
     for i in results:
 
+        
         details = i['url']
         data = requests.get(details)
         pokemonData:dict = data.json()
@@ -33,30 +34,18 @@ def getpokes():
         names:str = pokemonData['name']
         movent1:str = pokemonData['moves']
         gameversion:str = pokemonData['game_indices']
-
+        fontimg:str = img['front_default']
 
 
         moventl = []
         versionl = []
-        # imagenl = []
-        contador = 0
-
-        # for i in img:
-
-        #     imgurl = i['front_default']
-        #     imagenl.append(imgurl)
-            
-        #     contador += 1
-        #     # print(contador)
-
-        #     if contador == 1:
-        #         contador = 0
-        #         break                
+        contador = 0          
 
         for i in movent1:
 
             movent = i['move']
-            moventl.append(movent)
+            namemovent = movent['name']
+            moventl.append(namemovent)
             
             contador += 1
             # print(contador)
@@ -66,19 +55,19 @@ def getpokes():
                 break
         
         for i in gameversion:
-
             version = i['version']
-            versionl.append(version)
+            nameversion = version['name']
+
+            versionl.append(nameversion)
         
             contador += 1
 
-            print(contador)
             if contador == 3:
                 break
             
         poken = {
             'name': names,
-            # 'imagen': imagenl,
+            'imagen': fontimg,
             'versions': versionl,
             'movements': moventl
         }
@@ -87,6 +76,8 @@ def getpokes():
                 
 
     return jsonify(pokens),200
+
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True, port=port)  

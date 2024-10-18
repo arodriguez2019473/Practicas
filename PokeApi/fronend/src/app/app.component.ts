@@ -4,7 +4,7 @@ import { ServiceService } from './service.service';
 import { CommonModule } from '@angular/common';
 import { privateDecrypt } from 'node:crypto';
 import { url } from 'node:inspector';
-
+import { DetailsComponent } from './pages/details/details.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -15,11 +15,6 @@ import { url } from 'node:inspector';
 export class AppComponent implements OnInit {
   title = 'fronend';
   data: any;
-
-  addToCart() {
-  
-    
-  }
 
 
   constructor(
@@ -32,13 +27,6 @@ export class AppComponent implements OnInit {
         this.data = res
       },
     })
-  
-    // this.pokensSvc.getResult().subscribe({
-    //   next:(res) => {
-    //     this.data = res
-    //   },
-    // }) 
-  
   }  
 
 }

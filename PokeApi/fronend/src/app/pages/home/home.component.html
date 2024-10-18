@@ -1,0 +1,30 @@
+<div class="m-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+    @for(item of data; track $index) {
+  
+      <table class="table-fixed" >
+        <thead class="bg-white">
+        <tr>
+          <th>Nombre:</th>
+          <th>Imagen</th>
+          <!-- <th>Version:</th> -->
+          <!-- <th>Movimientos</th> -->
+          <th>detalles</th>
+        </tr>
+        </thead>
+            
+        <tbody class="bg-gray-600	">
+          <tr>
+            <th>{{item.name}}</th>
+            <th><img [src]="item.imagen"></th>
+            <!-- <th>{{item.versions}}</th> -->
+            <!-- <th>{{item.movements}}</th> -->
+            <th><nav>
+              <a [href]="['details/',item.name]" class="text-white">Detalles</a>
+            </nav></th>
+          </tr>
+        </tbody>
+      </table>
+    }
+    
+  </div>
+  
