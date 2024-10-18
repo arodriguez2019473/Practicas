@@ -13,7 +13,7 @@ export const routes: Routes = [
     },
 
     {
-        path: 'details/:name/:movements/:versions',
+        path: 'details/:name',
         component: DetailsComponent
     }
     

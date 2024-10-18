@@ -2,14 +2,15 @@
     @for(item of data; track $index) {
   
       <table class="table-fixed" >
+        
         <thead class="bg-white">
-        <tr>
-          <th>Nombre:</th>
-          <th>Imagen</th>
-          <!-- <th>Version:</th> -->
-          <!-- <th>Movimientos</th> -->
-          <th>detalles</th>
-        </tr>
+          <tr>
+            <th>Nombre:</th>
+            <th>Imagen</th>
+            <!-- <th>Version:</th> -->
+            <!-- <th>Movimientos</th> -->
+            <th>detalles</th>
+          </tr>
         </thead>
             
         <tbody class="bg-gray-600	">
@@ -18,14 +19,15 @@
             <th><img [src]="item.imagen"></th>
             <!-- <th>{{item.versions}}</th> -->
             <!-- <th>{{item.movements}}</th> -->
-            <th><nav>
-              <a [routerLink]="['/details', item.name ,item.movements.join(','), item.versions.join(',')]" class="text-white">Detalles</a>
-            </nav></th>
+            <th>
+              <nav>
+                <a [routerLink]="['/details', item.name]" [queryParams]="{ movements: item.movements, versions: item.versions }" class="text-white">Detalles</a>
+              </nav>
+            </th>
           </tr>
         </tbody>
+      
       </table>
     }
-    
-    
-  </div>
+</div>
   
