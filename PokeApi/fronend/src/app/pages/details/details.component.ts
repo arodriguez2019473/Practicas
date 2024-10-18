@@ -1,8 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ServiceService } from '../../service.service';
 import { ActivatedRoute } from '@angular/router';
-
-
 @Component({
   selector: 'app-details',
   standalone: true,
@@ -12,13 +10,28 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DetailsComponent implements OnInit {
 
-  constructor(
+  // aname!: string
+  // aimge!: string
+  // amoviments!: string
+  
 
-    private activatedRoute: ActivatedRoute
+  // moviments: any
+  poke: { name: string; movements: string; versions: string } = { name: '', movements: '', versions: '' };
+
+  constructor(
+    private activatedRoute: ActivatedRoute,
+
   ){}
 
   ngOnInit(): void {
-    console.log(this.activatedRoute.snapshot.paramMap.get('name'))
-  }
 
+    this.poke.name = this.activatedRoute.snapshot.params['name'];
+    this.poke.movements = this.activatedRoute.snapshot.params['movements'];
+    this.poke.versions = this.activatedRoute.snapshot.params['versions'];
+
+    //   console.log(this.aname);
+    //   console.log(this.aimge);
+    //   console.log(this.moviments);
+    // };
+  }
 }

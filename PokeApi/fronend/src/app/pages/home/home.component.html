@@ -19,12 +19,13 @@
             <!-- <th>{{item.versions}}</th> -->
             <!-- <th>{{item.movements}}</th> -->
             <th><nav>
-              <a [href]="['details/',item.name]" class="text-white">Detalles</a>
+              <a [routerLink]="['/details', item.name ,item.movements.join(','), item.versions.join(',')]" class="text-white">Detalles</a>
             </nav></th>
           </tr>
         </tbody>
       </table>
     }
+    
     
   </div>
   

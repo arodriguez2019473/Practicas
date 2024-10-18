@@ -13,10 +13,10 @@ export const routes: Routes = [
     },
 
     {
-        path:'details/:name',
-        component:DetailsComponent
-
+        path: 'details/:name/:movements/:versions',
+        component: DetailsComponent
     }
+    
 
 ];
 
