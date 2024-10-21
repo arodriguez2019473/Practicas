@@ -3,15 +3,16 @@
     <p class="uppercase ml-2 font-semibold text-gray-600">Salir</p>
 </div>
 
-<div>
-    <h1 class="ml-5 mt-4">No.{{poke.id}}</h1>
-</div>
 
 <div class="flex justify-center my-7 cursor-pointer" onclick="location.reload()">
     <i class="fa-solid fa-layer-group text-2xl text-gray-600 hover:text-gray-800 transition duration-200"></i>
     <p class="uppercase ml-2 font-semibold text-gray-600">Presiona para cargar datos</p>
 </div>
 
+<div class="flex justify-center place-items-center">
+    <h1 class=" ml-7 mb-4 text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-2xl lg:text-4xl">Datos del pokemon No. {{poke.id}}</h1>
+</div>
+    
 <div class="grid grid-cols-3 divide-x">
    
     <div class="flex justify-center place-items-center" >
@@ -19,9 +20,9 @@
         <div class="max-w-sm p-6 border border-white bg-amber-50 rounded-lg shadow ">
    
             <img [src]='poke.imagen' class="bg-center">
-            <p class="mb-3 font-normal uppercase">Nombre: {{ poke.name }}</p>
-            <p class="mb-3 font-normal uppercase">movimiento huevos: {{ poke.movements }}</p>
-            <p class="mb-3 font-normal uppercase">versiones: {{ poke.versions }}</p>
+            <p class="mb-3 font-normal ">Nombre: <span class="text-red-700 capitalize  ">{{ poke.name }}</span> </p>
+            <p class="mb-3 font-normal ">Movimiento: <span class="text-red-700 capitalize">{{ poke.movements }}</span></p>
+            <p class="mb-3 font-normal ">Versiones: <span class="text-red-700 capitalize">{{ poke.versions }}</span></p>
    
         </div>
    
@@ -33,12 +34,12 @@
             
             <ul>
                 
-                <li>HP: {{ poke.base[0] }}</li>
-                <li>Attack: {{ poke.base[1] }}</li>
-                <li>Defense: {{ poke.base[2] }}</li>
+                <li class="text-green-800">HP:{{ poke.base[0] }}</li>
+                <li class="text-red-700">Attack: {{ poke.base[1] }}</li>
+                <li class="text-blue-700">Defense: {{ poke.base[2] }}</li>
                 <li>-------------------------</li>
-                <li>felicidad: {{poke.felicidad}}</li>
-                <li>Rango de captura: {{poke.rango_captura}}%</li>
+                <li class="text-rose-400">felicidad: {{poke.felicidad}}</li>
+                <li class="text-orange-700">Rango de captura: {{poke.rango_captura}}%</li>
 
             </ul>
         
@@ -54,17 +55,18 @@
             
                 @if (poke.legendario == true) {                    
                     <ul>
-                        <i class="fa-solid fa-check">Es legendario</i>
-                        <i class="fa-solid fa-check">es mitico</i>
+                        <i>Es legendario <span ><i class="fa-solid fa-check"></i></span></i>
+                        <br>
+                        <i>Es mitico <span ><i class="fa-solid fa-check"></i></span></i>
                         <li>Numero de pokedex: "{{ poke.id }}"</li>
                         <li>Tipo: {{poke.tipo[1]}}</li>
                     </ul>
                 }
                 @else {
-
                     <ul>
-                        <i class="fa-solid fa-xmark">Es legendario</i>
-                        <i class="fa-solid fa-xmark">es mitico</i>
+                        <i>Es legendario <span ><i class="fa-solid fa-xmark"></i></span></i>
+                        <br>
+                        <i>Es mitico <span ><i class="fa-solid fa-xmark"></i></span></i>
                         <li>Numero de pokedex: "{{ poke.id }}"</li>
                         <li>Tipo: {{poke.tipo[1]}}</li>
                     </ul>
