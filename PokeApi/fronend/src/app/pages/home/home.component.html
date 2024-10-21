@@ -8,7 +8,7 @@
   
       <table class="table-fixed" >
         
-        <thead class="bg-white">
+        <thead class="bg-slate-200">
           <tr>
             <th>Nombre:</th>
             <th>Imagen</th>
@@ -18,13 +18,13 @@
           </tr>
         </thead>
             
-        <tbody class="bg-gray-600	">
+        <tbody class="bg-gray-600 ">
           <tr>
-            <th>{{item.name}}</th>
-            <th><img [src]="item.imagen"></th>
+            <th class="text-gray-300">{{item.name}}</th>
+            <th class="place-items-center"><img [src]="item.imagen"></th>
             <th>
               <nav>
-                <a [routerLink]="['/details', item.name]" class="fa-solid fa-circle-info"></a>
+                <a [routerLink]="['/details', item.name]" class="fa-duotone fa-solid fa-circle-info"></a>
               </nav>
             </th>
           </tr>

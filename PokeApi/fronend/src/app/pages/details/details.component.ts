@@ -20,8 +20,9 @@ export class DetailsComponent implements OnInit {
   }
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
-      const name = params['name'];
-      this.fetchPokeDetails(name);
+        const name = params['name'];
+        console.log(this.fetchPokeDetails); 
+        this.fetchPokeDetails(name);
     });
   }
 
@@ -29,7 +30,7 @@ export class DetailsComponent implements OnInit {
     this.pokensSvc.getPokens().subscribe({
       next: (res) => {
         this.poke = res.find((poke: any) => poke.name === name);
-        console.log(this.poke)
+        console.log(this.poke);
       },
     });
   }

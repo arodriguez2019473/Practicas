@@ -35,11 +35,50 @@ def getpokes():
         movent1:str = pokemonData['moves']
         gameversion:str = pokemonData['game_indices']
         fontimg:str = img['front_default']
+        stats:str = pokemonData['stats']
+        specie:str = pokemonData['species']
+        urlspecie: str = specie['url']
 
+        dataurlspecie = requests.get(urlspecie)
+        dataespecie = dataurlspecie.json()
+
+
+        feliz:str = dataespecie['base_happiness']
+        capture:str = dataespecie['capture_rate']
+
+        legendary:bool = dataespecie['is_legendary']
+        mitico: bool = dataespecie['is_mythical']
+
+        id: int = dataespecie['id']
+
+        tipodepok: str = dataespecie['egg_groups']
 
         moventl = []
+        base = []
         versionl = []
-        contador = 0          
+        statsl = []
+        tipopokemon = []
+        contador = 0        
+
+        for i in tipodepok:
+            
+            tipopok = i['name']
+            tipopokemon.append(tipopok)
+
+        for i in stats:
+
+            stat = i['stat']
+            bases = i['base_stat']
+
+            stasts = stat['name']
+
+            base.append(bases)
+            statsl.append(stasts)            
+            contador += 1
+
+            if contador == 3:
+                contador = 0
+                break
 
         for i in movent1:
 
@@ -69,14 +108,21 @@ def getpokes():
             'name': names,
             'imagen': fontimg,
             'versions': versionl,
-            'movements': moventl
+            'movements': moventl,
+            'stats': statsl,
+            'base': base,
+            'felicidad':feliz,
+            'rango_captura':capture,
+            'legendario':legendary,
+            'mitico':mitico,
+            'id':id,
+            'tipo':tipopokemon
         }
 
         pokens.append(poken)
                 
 
     return jsonify(pokens),200
-
 
 
 if __name__ == '__main__':
