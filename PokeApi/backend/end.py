@@ -37,6 +37,11 @@ def getpokes():
         fontimg:str = img['front_default']
         stats:str = pokemonData['stats']
         specie:str = pokemonData['species']
+
+        peso:str = pokemonData['weight']
+        habilidad:str = pokemonData['abilities']
+
+
         urlspecie: str = specie['url']
 
         dataurlspecie = requests.get(urlspecie)
@@ -53,12 +58,19 @@ def getpokes():
 
         tipodepok: str = dataespecie['egg_groups']
 
+
         moventl = []
         base = []
         versionl = []
         statsl = []
         tipopokemon = []
+        habilidadl = []
         contador = 0        
+
+        for i in habilidad:
+            habilidadtip = i['ability']
+            ability = habilidadtip['name']
+            habilidadl.append(ability)
 
         for i in tipodepok:
             
@@ -76,7 +88,7 @@ def getpokes():
             statsl.append(stasts)            
             contador += 1
 
-            if contador == 3:
+            if contador == 8:
                 contador = 0
                 break
 
@@ -89,7 +101,7 @@ def getpokes():
             contador += 1
             # print(contador)
 
-            if contador == 3:
+            if contador == 7:
                 contador = 0
                 break
         
@@ -101,7 +113,7 @@ def getpokes():
         
             contador += 1
 
-            if contador == 3:
+            if contador == 8:
                 break
             
         poken = {
@@ -116,7 +128,9 @@ def getpokes():
             'legendario':legendary,
             'mitico':mitico,
             'id':id,
-            'tipo':tipopokemon
+            'tipo':tipopokemon,
+            'peso':peso,
+            'habilidad':habilidadl
         }
 
         pokens.append(poken)

@@ -1,12 +1,12 @@
 <div class="mt-7 ml-7 flex items-center">
     <a href="pokemones" class="fa-solid fa-right-from-bracket fa-rotate-180 fa-2xl text-gray-600 hover:text-gray-800 transition duration-200"></a>
     <p class="uppercase ml-2 font-semibold text-gray-600">Salir</p>
-</div>
 
+    <div class="flex justify-center ml-96 cursor-pointer" onclick="location.reload()">
+        <i class="fa-solid fa-layer-group text-2xl text-gray-600 hover:text-gray-800 transition duration-200"></i>
+        <p class="uppercase ml-2 font-semibold text-gray-600">Presiona para cargar datos</p>
+    </div>
 
-<div class="flex justify-center my-7 cursor-pointer" onclick="location.reload()">
-    <i class="fa-solid fa-layer-group text-2xl text-gray-600 hover:text-gray-800 transition duration-200"></i>
-    <p class="uppercase ml-2 font-semibold text-gray-600">Presiona para cargar datos</p>
 </div>
 
 <div class="flex justify-center place-items-center">
@@ -18,12 +18,15 @@
     <div class="flex justify-center place-items-center" >
    
         <div class="max-w-sm p-6 border border-white bg-amber-50 rounded-lg shadow ">
-   
+
+            <h1 class="mb-3 font-normal uppercase text-xl text-center">{{ poke.name }}</h1>
             <img [src]='poke.imagen' class="bg-center">
-            <p class="mb-3 font-normal ">Nombre: <span class="text-red-700 capitalize  ">{{ poke.name }}</span> </p>
-            <p class="mb-3 font-normal ">Movimiento: <span class="text-red-700 capitalize">{{ poke.movements }}</span></p>
-            <p class="mb-3 font-normal ">Versiones: <span class="text-red-700 capitalize">{{ poke.versions }}</span></p>
-   
+            <p class="mb-3 font-normal">No.<span class="text-red-700 capitalize"> "{{ poke.id }}"</span></p>
+            <!-- <p class="mb-3 font-normal ">Primer movimiento: <span class="text-red-700 capitalize">{{ poke.movements[0] }}</span></p> -->
+            <p class="mb-3 font-normal ">Peso: <span class="text-red-700 capitalize">{{ poke.peso }}kg</span></p>   
+            <p class="mb-3 font-normal ">habilidad 1: <span class="text-red-700 capitalize">{{ poke.habilidad[0] }}</span></p>   
+            <p class="mb-3 font-normal ">habilidad oculta: <span class="text-red-700 capitalize">{{ poke.habilidad[1] }}</span></p>   
+
         </div>
    
     </div>
@@ -37,6 +40,9 @@
                 <li class="text-green-800">HP:{{ poke.base[0] }}</li>
                 <li class="text-red-700">Attack: {{ poke.base[1] }}</li>
                 <li class="text-blue-700">Defense: {{ poke.base[2] }}</li>
+                <li class="text-red-500">Ataque_Especial: {{poke.base[3]}}</li>
+                <li class="text-blue-500">Defensa_Especial: {{poke.base[4]}}</li>
+                <li class="text-yellow-400">velocidad: {{poke.base[5]}}</li>
                 <li>-------------------------</li>
                 <li class="text-rose-400">felicidad: {{poke.felicidad}}</li>
                 <li class="text-orange-700">Rango de captura: {{poke.rango_captura}}%</li>
@@ -58,8 +64,7 @@
                         <i>Es legendario <span ><i class="fa-solid fa-check"></i></span></i>
                         <br>
                         <i>Es mitico <span ><i class="fa-solid fa-check"></i></span></i>
-                        <li>Numero de pokedex: "{{ poke.id }}"</li>
-                        <li>Tipo: {{poke.tipo[1]}}</li>
+                        <!-- <li>Tipo: {{poke.tipo[1]}}</li> -->
                     </ul>
                 }
                 @else {
@@ -67,13 +72,12 @@
                         <i>Es legendario <span ><i class="fa-solid fa-xmark"></i></span></i>
                         <br>
                         <i>Es mitico <span ><i class="fa-solid fa-xmark"></i></span></i>
-                        <li>Numero de pokedex: "{{ poke.id }}"</li>
                         <li>Tipo: {{poke.tipo[1]}}</li>
+                        <li class="mb-3 font-normal ">Versiones: <span class="text-red-700 capitalize">{{ poke.versions }}</span></li>
                     </ul>
                 }
             
             </div>
-
         </div>
     </div>
 </div>
