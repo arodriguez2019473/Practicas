@@ -10,6 +10,7 @@
         
         <thead class="bg-slate-200">
           <tr>
+            <th>No.</th>
             <th>Nombre:</th>
             <th>Imagen</th>
             <!-- <th>Version:</th> -->
@@ -20,12 +21,17 @@
             
         <tbody class="bg-gray-600 ">
           <tr>
+            <th class="text-gray-300">{{item.id}}</th>
             <th class="text-gray-300">{{item.name}}</th>
             <th class="place-items-center"><img [src]="item.imagen"></th>
             <th>
-              <nav>
-                <a [routerLink]="['/details', item.name]" class="fa-duotone fa-solid fa-circle-info"></a>
+            
+            <div onclick="location.reload()">
+              <nav >
+                <a [routerLink]="['/details', item.id]" class="fa-duotone fa-solid fa-circle-info"></a>
               </nav>
+            </div>
+
             </th>
           </tr>
         </tbody>

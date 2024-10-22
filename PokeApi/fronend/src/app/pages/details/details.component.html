@@ -2,29 +2,32 @@
     <a href="pokemones" class="fa-solid fa-right-from-bracket fa-rotate-180 fa-2xl text-gray-600 hover:text-gray-800 transition duration-200"></a>
     <p class="uppercase ml-2 font-semibold text-gray-600">Salir</p>
 
-    <div class="flex justify-center ml-96 cursor-pointer" onclick="location.reload()">
-        <i class="fa-solid fa-layer-group text-2xl text-gray-600 hover:text-gray-800 transition duration-200"></i>
-        <p class="uppercase ml-2 font-semibold text-gray-600">Presiona para cargar datos</p>
-    </div>
+    <!-- <div class="flex justify-center ml-96" onclick="location.reload()">
+        <i class="fa-solid fa-layer-group text-2xl text-gray-600"></i>
+        <p class="uppercase ml-2 font-semibold text-gray-600">Presiona si no carga</p>
+    </div> -->
 
 </div>
 
-<div class="flex justify-center place-items-center">
+<div class="|flex justify-center place-items-center">
     <h1 class=" ml-7 mb-4 text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-2xl lg:text-4xl">Datos del pokemon No. {{poke.id}}</h1>
 </div>
     
 <div class="grid grid-cols-3 divide-x">
    
-    <div class="flex justify-center place-items-center" >
+    <div class="flex justify-start" >
    
         <div class="max-w-sm p-6 border border-white bg-amber-50 rounded-lg shadow ">
 
             <h1 class="mb-3 font-normal uppercase text-xl text-center">{{ poke.name }}</h1>
-            <img [src]='poke.imagen' class="bg-center">
+            <img [src]='poke.imagen' class="">
+            <p><img [src]='poke.tipoe[0]' class=""><img [src]='poke.tipoe[1]' class="bg-center"></p>
             <p class="mb-3 font-normal">No.<span class="text-red-700 capitalize"> "{{ poke.id }}"</span></p>
             <!-- <p class="mb-3 font-normal ">Primer movimiento: <span class="text-red-700 capitalize">{{ poke.movements[0] }}</span></p> -->
             <p class="mb-3 font-normal ">Peso: <span class="text-red-700 capitalize">{{ poke.peso }}kg</span></p>   
+            <p class="mb-3 font-normal ">altura: <span class="text-red-700 capitalize">{{ poke.tamano }}m</span></p>
             <p class="mb-3 font-normal ">habilidad 1: <span class="text-red-700 capitalize">{{ poke.habilidad[0] }}</span></p>   
+            <p>el pep</p>
             <p class="mb-3 font-normal ">habilidad oculta: <span class="text-red-700 capitalize">{{ poke.habilidad[1] }}</span></p>   
 
         </div>
@@ -59,21 +62,36 @@
 
             <div class="max-w-sm p-6 border border-white bg-amber-50 rounded-lg shadow ">
             
-                @if (poke.legendario == true) {                    
+                @if (poke.mega == false ) {                    
                     <ul>
-                        <i>Es legendario <span ><i class="fa-solid fa-check"></i></span></i>
+                        <i>Es legendario <span><i class="fa-solid fa-xmark"></i></span></i>
                         <br>
-                        <i>Es mitico <span ><i class="fa-solid fa-check"></i></span></i>
-                        <!-- <li>Tipo: {{poke.tipo[1]}}</li> -->
+                        <i>Es mitico <span ><i class="fa-solid fa-xmark"></i></span></i>
+                        <li>Grupo huevo: {{poke.tipo}}</li>
+                        <li>Grito<audio [src]="poke.audio" preload="none"></audio></li>
+                        <i>Mega <span><i class="fa-solid fa-check"></i></span></i>
+                    </ul>
+                }
+
+                @else if (poke.legendario == false ) {
+
+                    <ul>
+                        <i>Es legendario <span><i class="fa-solid fa-xmark"></i></span></i>
+                        <br>
+                        <i>Es mitico <span ><i class="fa-solid fa-xmark"></i></span></i>
+                        <li>Grupo huevo: {{poke.tipo}}</li>
+                        <li>Grito<audio [src]="poke.audio" preload="none"></audio></li>
+                        <i>Mega <span><i class="fa-solid fa-check"></i></span></i>
                     </ul>
                 }
                 @else {
                     <ul>
-                        <i>Es legendario <span ><i class="fa-solid fa-xmark"></i></span></i>
+                        <i>Es legendario <span ><i class="fa-solid fa-check"></i></span></i>
                         <br>
-                        <i>Es mitico <span ><i class="fa-solid fa-xmark"></i></span></i>
-                        <li>Tipo: {{poke.tipo[1]}}</li>
-                        <!-- <li class="mb-3 font-normal ">Versiones: <span class="text-red-700 capitalize">{{ poke.versions }}</span></li> -->
+                        <i>Es mitico <span ><i class="fa-solid fa-check"></i></span></i>
+                        <li>Grupo huevo: {{poke.tipo}}</li>
+                        <li>Grito<audio [src]='poke.audio' preload="none" ></audio></li>
+                        <i>Mega <span><i class="fa-solid fa-xmark"></i></span></i>
                     </ul>
                 }
             
@@ -82,9 +100,83 @@
     </div>
 </div>
 
-<div>
+<div class="grid grid-cols-2 divide-x items-center justify-center place-items-center mt-5 ml-5">
 
-    <button></button>
+    <div class="">
+
+        <h1 class="lg:text-2xl">Movimientos</h1>
+        <table>
+            <thead class="shadow-md bg-slate-600">
+                <tr>
+                    <th>No.</th>
+                    <th>Nombre</th>
+                </tr>
+
+            </thead>
+            <tbody class="border-white bg-amber-50">
+            
+                @for (item of poke.movements; track $index;) {           
+                    
+                    <tr class="">
+                        <td>{{ $index + 1 }}</td>
+                        <td>{{item}}</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+    </div>
+
+    <div class="ml-5">
+
+        <h1 class="lg:text-2xl">Versiones</h1>
+        <table>
+            
+            <thead class="shadow-md bg-slate-600">
+                
+                <tr>
+                    <th>No.</th>
+                    <th>Version</th>
+                </tr>
+
+            </thead>
+            <tbody class="border-white bg-amber-50">
+            
+                @for (item of poke.versions; track $index;) {           
+                    
+                    <tr class="">
+                        <td>{{ $index + 1 }}</td>
+                        <td>{{item}}</td>
+                    </tr>
+                }
+    
+        
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<div>
+<div onclick="location.reload()">
+    <button >
+    <a [routerLink]="['/details', poke.id-1]" class="fa-solid fa-circle-arrow-left fa-2xl"></a>
+    </button>
 
 </div>
 
+<!-- <nav>
+    <a [routerLink]="['/details', item.id]" class="fa-duotone fa-solid fa-circle-info"></a>
+</nav> -->
+
+
+<div class="justify-self-end" onclick="location.reload()">
+    <button>
+    <a [routerLink]="['/details', poke.id+1]" class="fa-solid fa-circle-arrow-right fa-2xl"></a>
+    </button>
+
+</div>
+</div>
+
+<br>
+<br>

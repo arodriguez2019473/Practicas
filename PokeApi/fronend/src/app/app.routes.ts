@@ -14,7 +14,7 @@ export const routes: Routes = [
     },
 
     {
-        path: 'details/:name',
+        path: 'details/:id',
         component: DetailsComponent
     },
     
