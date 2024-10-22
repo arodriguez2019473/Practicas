@@ -88,9 +88,9 @@ def getpokes():
             statsl.append(stasts)            
             contador += 1
 
-            if contador == 8:
-                contador = 0
-                break
+            # if contador == 8:
+            #     contador = 0
+            #     break
 
         for i in movent1:
 
@@ -111,10 +111,10 @@ def getpokes():
 
             versionl.append(nameversion)
         
-            contador += 1
+            # contador += 1
 
-            if contador == 4:
-                break
+            # if contador == 4:
+            #     break
             
         poken = {
             'name': names,
