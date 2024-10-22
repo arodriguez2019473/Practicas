@@ -101,9 +101,9 @@ def getpokes():
             contador += 1
             # print(contador)
 
-            if contador == 7:
-                contador = 0
-                break
+            # if contador == 7:
+            #     contador = 0
+            #     break
         
         for i in gameversion:
             version = i['version']
