@@ -113,7 +113,7 @@ def getpokes():
         
             contador += 1
 
-            if contador == 8:
+            if contador == 4:
                 break
             
         poken = {
