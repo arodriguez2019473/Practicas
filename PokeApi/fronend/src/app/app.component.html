@@ -1,15 +1,37 @@
-<ngx-spinner>
-  <p class="text-white">loading ...</p>
-</ngx-spinner>
+<div class="flex max-h-full bg-slate-600">
 
-<div class="bg-slate-600 flex p-6 justify-center">
+  <aside class="w-52 bg-slate-600 text-white h-screen">
+    <div class="p-4">
+      <img src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" alt="">
+      <h2 class="text-lg font-bold">Menú</h2>
+      <ul class="mt-4">
+        <li class="mb-2">
+          <a href="" class="block p-2 hover:bg-slate-700 rounded"><span class="fa-solid fa-house-chimney uppercase text-center"></span>Home</a>
+        </li>
 
-  <P class="text-rose-50">POKEAPI</P>
+        <li class="mb-2">
+          <a href="pokemones" class="block p-2 hover:bg-slate-700 rounded"><i class="fa-solid fa-diamond"></i>Pokédex</a>
+        </li>
+        
+        <li class="mb-2">
+          <a href="config" class="block p-2 hover:bg-slate-700 rounded"><i class="fa-solid fa-gears"></i>Configuración</a>
+        </li>
 
+      </ul>
+    
+    </div>
+    
+  </aside>
+
+  <main class="flex-1 bg-slate-200 p-6">
+    <ngx-spinner>
+      <p class="text-white">Cargando ...</p>
+    </ngx-spinner>
+
+    <div class="bg-slate-600 flex p-6 justify-center">
+      <p class="text-rose-50">POKEAPI</p>
+    </div>
+
+    <router-outlet></router-outlet>
+  </main>
 </div>
-<div class="flex justify-center bg-slate-200">
-<nav>
-  <a href="" class="fa-solid fa-house-chimney uppercase text-center"></a>
-</nav>
-</div>
-<router-outlet></router-outlet>
