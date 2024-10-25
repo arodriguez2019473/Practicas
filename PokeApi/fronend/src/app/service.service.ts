@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { error } from 'console';
 import { catchError, Observable } from 'rxjs';
 
 @Injectable({
@@ -10,13 +9,21 @@ import { catchError, Observable } from 'rxjs';
 })
 export class ServiceService {
 
-  private pokensendp = "http://localhost:5000/pokens"
+  private pokensendp = "http://localhost:5000/pokemon"
+  private pokelist = "http://localhost:5000/pokens"  
 
   constructor( protected http: HttpClient ) { }
 
-  getPokens(): Observable<any>{
+  getPokens(pokemonName: string ): Observable<any>{  
   
-    return this.http.get(this.pokensendp).pipe(catchError(err => err))
+    return this.http.get(`${this.pokensendp}/${pokemonName}`).pipe(catchError(err => err))
   
   }
+  getPokenslist(): Observable<any>{
+  
+    return this.http.get(this.pokelist).pipe(catchError(err => err))
+  
+  }
+
 }
+

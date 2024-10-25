@@ -1,139 +1,47 @@
 
 
-# @app.route('/', methods=['GET'])
-# def home_resource():
-    
-#     queryparams = request.args
-#     print(queryparams)
-    
-#     return jsonify(queryparams), 200
+import { Component, OnInit } from '@angular/core';
+import { ServiceService } from '../../service.service';
+import { Router } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { CommonModule } from '@angular/common';
 
-# @app.route('/pokenresult', methods=['GET'])
+@Component({
+  selector: 'app-home',
+  standalone: true,
+  imports: [FontAwesomeModule, CommonModule],
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
+})
+export class HomeComponent implements OnInit {
+  data: any;
+  faCoffee = faCoffee;
+  resultado: string = '';
+  mostrarDato: any = null; // Inicializar como null
 
-# def getresult():
+  constructor(
+    private pokensSvc: ServiceService,
+    private router: Router,
+  ) { }
 
-#     result = []
+  ngOnInit(): void {
+    // Cargar Pokémon por defecto o mantener vacío
+  }
 
-#     result1: int = data['results']
+  obtenerdato(): void {
+    const numPoke = (document.getElementById('numPoke') as HTMLInputElement).value;
+    this.resultado = numPoke;
 
-#     result.append(result1)
-
-#     return jsonify(result), 200
-
-
-# @app.route('/xp', methods=['GET'])
-
-# def getxp():
-
-#     xp = []
-
-#     xp1:int = data['base_experience']
-#     xp.append(xp1)
-
-#     return jsonify(xp), 200
-
-# @app.route('/cria', methods=['GET'])
-    
-# def getcries():
-
-#     crias = []
-
-#     cria1:int = data['cries']
-#     crias.append[cria1]
-
-#     return jsonify(crias), 200
-
-# @app.route('/forms', methods=['GET'])
-# def getforms(): 
-
-#     forms = []
-
-#     form1:str = data['forms']
-#     forms.append[form1]
-
-#     return jsonify(forms), 200
-
-# @app.route('/gameInd', methods=['GET'])
-# def getgameInd():
-
-#     gameind = []
-
-#     gamein1:str = data['game_indices']
-#     gameind.append[gamein1]
-
-#     return jsonify(gameind), 200
-
-# @app.route('/pokens', methods=['POST'])
-# def postpokes():
-
-#     for key in ['name','url']:
-#         if key not in data:
-#             return jsonify({"message": "error en name o url"}),400
-#     uuid_secret = uuid.uuid4()
-
-#     new_poke = {
-#         "name": data['name'],
-#         "url": data['url']
-#     }
-
-#     exampl.append(new_poke)
-#     return jsonify(exampl),201
-
-
-
-    # mostrar el pokemon y sus detalles
-        # test1 = URL2[0]
-        
-        # response2 = requests.get(test1)
-        # data2 = response2.json()
-
-        # details: str = data2
-
-
-        # return jsonify(results ,details), 200
-
-# @app.route('/details', methods=['GET'])
-# def getdetails():
-
-#     response = requests.get(URL)
-#     data = response.json()
-#     results = data['url']
-
-#     return jsonify(results), 200
-
-
-from flask import Flask, jsonify, request
-import requests
-import uuid
-
-
-        print(results[0])
-    URL2 = []   
-    i:int = 0
-
-    while i < limit: 
-          
-        i += 1
-        print(i)
-        for result in results:
-
-
-            details = result['url']
-            response2 = requests.get(details)
-            data2 = response2.json()
-            URL2.append(data2)
-            
-
-                
-    return jsonify(results[i-1], URL2[i-1]),200            
-        # datamovent = requests.get(movent1)
-        # pokemovent = datamovent.json()
-
-        # movent:str = pokemovent['move']
-        # print(movent)
-
-        
-
-        # detallePoke:str = pokemonData
-
-    
+    // Llamar al servicio con el número de Pokémon ingresado
+    this.pokensSvc.getPokens(numPoke).subscribe({
+      next: (res) => {
+        this.mostrarDato = res; // Guardar el dato en mostrarDato
+        console.log(this.mostrarDato);
+      },
+      error: (err) => {
+        console.error('Error al obtener datos del Pokémon:', err);
+      }
+    });
+  }
+}

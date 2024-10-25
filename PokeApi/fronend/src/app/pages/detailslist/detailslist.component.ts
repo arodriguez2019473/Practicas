@@ -3,14 +3,16 @@ import { ServiceService } from '../../service.service';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+
 @Component({
-  selector: 'app-details',
+  selector: 'app-detailslist',
   standalone: true,
   imports: [CommonModule,FontAwesomeModule,RouterModule],
-  templateUrl: './details.component.html',
-  styleUrl: './details.component.css'
+  templateUrl: './detailslist.component.html',
+  styleUrl: './detailslist.component.css'
 })
-export class DetailsComponent implements OnInit {
+export class DetailslistComponent implements OnInit {
   poke: any;
 
   constructor(
@@ -27,8 +29,8 @@ export class DetailsComponent implements OnInit {
   }
 
   fetchPokeDetails(id: string): void {
-    const idNum = Number(id); // aca podemos hacer una conversion siempre tener en cuenta eso por que si no no sabra a donde ir
-    this.pokensSvc.getPokenslist().subscribe({
+    const idNum = Number(id);
+    this.pokensSvc.getPokens('id').subscribe({
       next: (res) => {
         this.poke = res.find((poke: any) => poke.id === idNum);
       },

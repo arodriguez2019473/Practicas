@@ -2,40 +2,54 @@
 <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
 <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
 
-
-<div class="m-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-    @for(item of data; track $index) {
+<div class="m-8">
+  <label class="block text-sm font-medium leading-6 text-gray-900">Busca el pokemon</label>
   
-      <table class="table-fixed" >
-        
-        <thead class="bg-slate-100">
-          <tr>
-            <th>No.</th>
-            <th>Nombre:</th>
-            <th>Imagen</th>
-            <!-- <th>Version:</th> -->
-            <!-- <th>Movimientos</th> -->
-            <th>detalles</th>
-          </tr>
-        </thead>
-            
-        <tbody class="bg-gray-600 ">
-          <tr>
-            <th class="text-gray-300">{{item.id}}</th>
-            <th class="text-gray-300">{{item.name}}</th>
-            <th class="place-items-center"><img [src]="item.imagen"></th>
-            <th>
-            
-            <div onclick="location.reload()">
-              <nav >
-                <a [routerLink]="['/details', item.id]" class="fa-duotone fa-solid fa-circle-info"></a>
-              </nav>
-            </div>
-
-            </th>
-          </tr>
-        </tbody>
-      
-      </table> 
-    }
+  <div class="relative mt-2 rounded-md shadow-sm">
+    <input type="text" id="numPoke" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="No.Pokemon">
+  
+    <div>
+      <div (click)="obtenerdato()">
+        <nav>
+          <a class=""><i class="fa-solid fa-magnifying-glass"></i>Buscar</a>
+        </nav>
+      </div>
     </div>
+  </div>
+  
+</div>
+
+<div class="place-items-center">
+@if (mostrarDato) {
+<a class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{mostrarDato.name}}</h5>
+  <p class="font-normal text-gray-700 dark:text-gray-400"><img [src]="mostrarDato?.imagen" alt="me muestro"></p>
+  <p class="font-normal text-gray-700 dark:text-gray-400">{{mostrarDato?.id}}</p>
+  <p class="font-normal text-gray-700 dark:text-gray-400">{{mostrarDato?.name}}</p>
+  </a>
+  <button (click)="presionar()">ver detalles</button>
+}
+
+
+
+</div>
+<div class="place-items-center">
+@if (presion) {
+
+  <ul>
+                
+    <li class="text-green-800"><i class="fa-solid fa-heart-circle-plus"></i> HP: {{ mostrarDato.base[0] }}</li>
+    <li class="text-red-700"><i class="fa-solid fa-bolt"></i> Attack: {{ mostrarDato.base[1] }}</li>
+    <li class="text-blue-700"><i class="fa-solid fa-shield"></i> Defense: {{ mostrarDato.base[2] }}</li>
+    <li class="text-red-500"><i class="fa-solid fa-dragon"></i> Ataque_Especial: {{mostrarDato.base[3]}}</li>
+    <li class="text-blue-500"><i class="fa-brands fa-grunt"></i> Defensa_Especial: {{mostrarDato.base[4]}}</li>
+    <li class="text-yellow-400"><i class="fa-solid fa-person-running"></i> Velocidad: {{mostrarDato.base[5]}}</li>
+
+    <li>-------------------------</li>
+    <li class="text-rose-400"><i class="fa-solid fa-face-laugh-squint"></i> Felicidad: {{mostrarDato.felicidad}}</li>
+    <li class="text-orange-700"><i class="fa-solid fa-ranking-star"></i> Rango de captura: {{mostrarDato.rango_captura}}%</li>
+
+</ul>
+}
+</div>

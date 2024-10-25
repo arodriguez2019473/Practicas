@@ -29,12 +29,7 @@ export class AppComponent implements OnInit {
   ){ }
 
   ngOnInit(): void{
-    this.pokensSvc.getPokens().subscribe({
-      next:(res) => {
-        this.data = res
-      },
-    })
-  }  
+}  
 
 }
 

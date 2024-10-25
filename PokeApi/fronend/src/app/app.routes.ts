@@ -5,6 +5,7 @@ import { Component, NgModule } from '@angular/core';
 import { HomeComponent } from './pages/home/home.component';
 import { PrincipalComponent } from './pages/principal/principal.component';
 import { ConfigComponent } from './pages/config/config.component';
+import { MinilistComponent } from './pages/minilist/minilist.component';
 
 
 export const routes: Routes = [
@@ -27,6 +28,10 @@ export const routes: Routes = [
     {
         path: 'config',
         component: ConfigComponent
+    },
+    {
+        path: 'list',
+        component: MinilistComponent
     }
 
 ];

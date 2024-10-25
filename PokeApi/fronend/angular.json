@@ -15,7 +15,7 @@
           "options": {
             "outputPath": "dist/fronend",
             "index": "src/index.html",
-            "browser": "src/main.ts",
+            "browser": "src/main.ts",  
             "polyfills": [
               "zone.js"
             ],
@@ -63,6 +63,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "proxyConfig": "proxy.conf.json" 
+          },
           "configurations": {
             "production": {
               "buildTarget": "fronend:build:production"

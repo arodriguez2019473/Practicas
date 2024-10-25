@@ -1,0 +1,41 @@
+<link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
+<link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
+<link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
+
+
+<div class="m-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+    @for(item of data; track $index) {
+  
+      <table class="table-fixed" >
+        
+        <thead class="bg-slate-100">
+          <tr>
+            <th>No.</th>
+            <th>Nombre:</th>
+            <th>Imagen</th>
+            <!-- <th>Version:</th> -->
+            <!-- <th>Movimientos</th> -->
+            <th>detalles</th>
+          </tr>
+        </thead>
+            
+        <tbody class="bg-gray-600 ">
+          <tr>
+            <th class="text-gray-300">{{item.id}}</th>
+            <th class="text-gray-300">{{item.name}}</th>
+            <th class="place-items-center"><img [src]="item.imagen"></th>
+            <th>
+            
+            <div onclick="location.reload()">
+              <nav >
+                <a [routerLink]="['/details', item.id]" class="fa-duotone fa-solid fa-circle-info"></a>
+              </nav>
+            </div>
+
+            </th>
+          </tr>
+        </tbody>
+      
+      </table> 
+    }
+    </div>

@@ -1,0 +1,1624 @@
+[
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1.ogg"
+    ],
+    "base": [
+      45,
+      49,
+      49,
+      65,
+      65,
+      45
+    ],
+    "felicidad": 50,
+    "habilidad": [
+      "overgrow",
+      "chlorophyll"
+    ],
+    "id": 1,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "razor-wind",
+      "swords-dance",
+      "cut",
+      "bind",
+      "vine-whip",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "growl",
+      "strength",
+      "mega-drain",
+      "leech-seed",
+      "growth"
+    ],
+    "name": "bulbasaur",
+    "peso": 69,
+    "rango_captura": 45,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 7,
+    "tipo": [
+      "monster",
+      "plant"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/12.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/4.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/2.ogg"
+    ],
+    "base": [
+      60,
+      62,
+      63,
+      80,
+      80,
+      60
+    ],
+    "felicidad": 50,
+    "habilidad": [
+      "overgrow",
+      "chlorophyll"
+    ],
+    "id": 2,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "swords-dance",
+      "cut",
+      "bind",
+      "vine-whip",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "growl",
+      "roar",
+      "strength",
+      "mega-drain",
+      "leech-seed",
+      "growth"
+    ],
+    "name": "ivysaur",
+    "peso": 130,
+    "rango_captura": 45,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 10,
+    "tipo": [
+      "monster",
+      "plant"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/12.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/4.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/3.ogg"
+    ],
+    "base": [
+      80,
+      82,
+      83,
+      100,
+      100,
+      80
+    ],
+    "felicidad": 50,
+    "habilidad": [
+      "overgrow",
+      "chlorophyll"
+    ],
+    "id": 3,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "swords-dance",
+      "cut",
+      "bind",
+      "vine-whip",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "growl",
+      "roar",
+      "hyper-beam",
+      "strength",
+      "mega-drain",
+      "leech-seed"
+    ],
+    "name": "venusaur",
+    "peso": 1000,
+    "rango_captura": 45,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 20,
+    "tipo": [
+      "monster",
+      "plant"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/12.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/4.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/4.ogg"
+    ],
+    "base": [
+      39,
+      52,
+      43,
+      60,
+      50,
+      65
+    ],
+    "felicidad": 50,
+    "habilidad": [
+      "blaze",
+      "solar-power"
+    ],
+    "id": 4,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "mega-punch",
+      "fire-punch",
+      "thunder-punch",
+      "scratch",
+      "swords-dance",
+      "cut",
+      "wing-attack",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "leer",
+      "bite",
+      "growl"
+    ],
+    "name": "charmander",
+    "peso": 85,
+    "rango_captura": 45,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 6,
+    "tipo": [
+      "monster",
+      "dragon"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/10.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/5.ogg"
+    ],
+    "base": [
+      58,
+      64,
+      58,
+      80,
+      65,
+      80
+    ],
+    "felicidad": 50,
+    "habilidad": [
+      "blaze",
+      "solar-power"
+    ],
+    "id": 5,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "mega-punch",
+      "fire-punch",
+      "thunder-punch",
+      "scratch",
+      "swords-dance",
+      "cut",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "leer",
+      "bite",
+      "growl",
+      "roar"
+    ],
+    "name": "charmeleon",
+    "peso": 190,
+    "rango_captura": 45,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 11,
+    "tipo": [
+      "monster",
+      "dragon"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/10.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/6.ogg"
+    ],
+    "base": [
+      78,
+      84,
+      78,
+      109,
+      85,
+      100
+    ],
+    "felicidad": 50,
+    "habilidad": [
+      "blaze",
+      "solar-power"
+    ],
+    "id": 6,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "mega-punch",
+      "fire-punch",
+      "thunder-punch",
+      "scratch",
+      "swords-dance",
+      "cut",
+      "wing-attack",
+      "fly",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "leer",
+      "bite"
+    ],
+    "name": "charizard",
+    "peso": 905,
+    "rango_captura": 45,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 17,
+    "tipo": [
+      "monster",
+      "dragon"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/10.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/3.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/7.ogg"
+    ],
+    "base": [
+      44,
+      48,
+      65,
+      50,
+      64,
+      43
+    ],
+    "felicidad": 50,
+    "habilidad": [
+      "torrent",
+      "rain-dish"
+    ],
+    "id": 7,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "mega-punch",
+      "ice-punch",
+      "mega-kick",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "bite",
+      "mist",
+      "water-gun",
+      "hydro-pump",
+      "surf",
+      "ice-beam"
+    ],
+    "name": "squirtle",
+    "peso": 90,
+    "rango_captura": 45,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 5,
+    "tipo": [
+      "monster",
+      "water1"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/11.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/8.ogg"
+    ],
+    "base": [
+      59,
+      63,
+      80,
+      65,
+      80,
+      58
+    ],
+    "felicidad": 50,
+    "habilidad": [
+      "torrent",
+      "rain-dish"
+    ],
+    "id": 8,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "mega-punch",
+      "ice-punch",
+      "mega-kick",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "bite",
+      "mist",
+      "water-gun",
+      "hydro-pump",
+      "surf",
+      "ice-beam"
+    ],
+    "name": "wartortle",
+    "peso": 225,
+    "rango_captura": 45,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 10,
+    "tipo": [
+      "monster",
+      "water1"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/11.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/9.ogg"
+    ],
+    "base": [
+      79,
+      83,
+      100,
+      85,
+      105,
+      78
+    ],
+    "felicidad": 50,
+    "habilidad": [
+      "torrent",
+      "rain-dish"
+    ],
+    "id": 9,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "mega-punch",
+      "ice-punch",
+      "mega-kick",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "bite",
+      "roar",
+      "mist",
+      "water-gun",
+      "hydro-pump",
+      "surf"
+    ],
+    "name": "blastoise",
+    "peso": 855,
+    "rango_captura": 45,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 16,
+    "tipo": [
+      "monster",
+      "water1"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/11.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10.ogg"
+    ],
+    "base": [
+      45,
+      30,
+      35,
+      20,
+      20,
+      45
+    ],
+    "felicidad": 50,
+    "habilidad": [
+      "shield-dust",
+      "run-away"
+    ],
+    "id": 10,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "tackle",
+      "string-shot",
+      "snore",
+      "bug-bite",
+      "electroweb"
+    ],
+    "name": "caterpie",
+    "peso": 29,
+    "rango_captura": 255,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 3,
+    "tipo": [
+      "bug"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/7.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/11.ogg"
+    ],
+    "base": [
+      50,
+      20,
+      55,
+      25,
+      25,
+      30
+    ],
+    "felicidad": 50,
+    "habilidad": [
+      "shed-skin"
+    ],
+    "id": 11,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "string-shot",
+      "harden",
+      "iron-defense",
+      "bug-bite",
+      "electroweb"
+    ],
+    "name": "metapod",
+    "peso": 99,
+    "rango_captura": 120,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 7,
+    "tipo": [
+      "bug"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/7.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/12.ogg"
+    ],
+    "base": [
+      60,
+      45,
+      50,
+      90,
+      80,
+      70
+    ],
+    "felicidad": 50,
+    "habilidad": [
+      "compound-eyes",
+      "tinted-lens"
+    ],
+    "id": 12,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "razor-wind",
+      "gust",
+      "whirlwind",
+      "headbutt",
+      "tackle",
+      "take-down",
+      "double-edge",
+      "supersonic",
+      "psybeam",
+      "hyper-beam",
+      "mega-drain",
+      "solar-beam",
+      "poison-powder",
+      "stun-spore",
+      "sleep-powder"
+    ],
+    "name": "butterfree",
+    "peso": 320,
+    "rango_captura": 45,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 11,
+    "tipo": [
+      "bug"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/7.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/3.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/13.ogg"
+    ],
+    "base": [
+      40,
+      35,
+      30,
+      20,
+      20,
+      50
+    ],
+    "felicidad": 70,
+    "habilidad": [
+      "shield-dust",
+      "run-away"
+    ],
+    "id": 13,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "poison-sting",
+      "string-shot",
+      "bug-bite",
+      "electroweb"
+    ],
+    "name": "weedle",
+    "peso": 32,
+    "rango_captura": 255,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 3,
+    "tipo": [
+      "bug"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/7.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/4.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/14.ogg"
+    ],
+    "base": [
+      45,
+      25,
+      50,
+      25,
+      25,
+      35
+    ],
+    "felicidad": 70,
+    "habilidad": [
+      "shed-skin"
+    ],
+    "id": 14,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "string-shot",
+      "harden",
+      "iron-defense",
+      "bug-bite",
+      "electroweb"
+    ],
+    "name": "kakuna",
+    "peso": 100,
+    "rango_captura": 120,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 6,
+    "tipo": [
+      "bug"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/7.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/4.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/15.ogg"
+    ],
+    "base": [
+      65,
+      90,
+      40,
+      45,
+      80,
+      75
+    ],
+    "felicidad": 70,
+    "habilidad": [
+      "swarm",
+      "sniper"
+    ],
+    "id": 15,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "swords-dance",
+      "cut",
+      "headbutt",
+      "fury-attack",
+      "take-down",
+      "double-edge",
+      "poison-sting",
+      "twineedle",
+      "pin-missile",
+      "hyper-beam",
+      "peck",
+      "mega-drain",
+      "solar-beam",
+      "string-shot",
+      "toxic"
+    ],
+    "name": "beedrill",
+    "peso": 295,
+    "rango_captura": 45,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 10,
+    "tipo": [
+      "bug"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/7.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/4.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/16.ogg"
+    ],
+    "base": [
+      40,
+      45,
+      40,
+      35,
+      35,
+      56
+    ],
+    "felicidad": 70,
+    "habilidad": [
+      "keen-eye",
+      "tangled-feet",
+      "big-pecks"
+    ],
+    "id": 16,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "razor-wind",
+      "gust",
+      "wing-attack",
+      "whirlwind",
+      "fly",
+      "sand-attack",
+      "headbutt",
+      "tackle",
+      "take-down",
+      "double-edge",
+      "toxic",
+      "agility",
+      "quick-attack",
+      "rage",
+      "mimic"
+    ],
+    "name": "pidgey",
+    "peso": 18,
+    "rango_captura": 255,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 3,
+    "tipo": [
+      "flying"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/1.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/3.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/17.ogg"
+    ],
+    "base": [
+      63,
+      60,
+      55,
+      50,
+      50,
+      71
+    ],
+    "felicidad": 70,
+    "habilidad": [
+      "keen-eye",
+      "tangled-feet",
+      "big-pecks"
+    ],
+    "id": 17,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "razor-wind",
+      "gust",
+      "wing-attack",
+      "whirlwind",
+      "fly",
+      "sand-attack",
+      "headbutt",
+      "tackle",
+      "take-down",
+      "double-edge",
+      "toxic",
+      "agility",
+      "quick-attack",
+      "rage",
+      "mimic"
+    ],
+    "name": "pidgeotto",
+    "peso": 300,
+    "rango_captura": 120,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 11,
+    "tipo": [
+      "flying"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/1.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/3.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/18.ogg"
+    ],
+    "base": [
+      83,
+      80,
+      75,
+      70,
+      70,
+      101
+    ],
+    "felicidad": 70,
+    "habilidad": [
+      "keen-eye",
+      "tangled-feet",
+      "big-pecks"
+    ],
+    "id": 18,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "razor-wind",
+      "gust",
+      "wing-attack",
+      "whirlwind",
+      "fly",
+      "sand-attack",
+      "headbutt",
+      "tackle",
+      "take-down",
+      "double-edge",
+      "hyper-beam",
+      "toxic",
+      "agility",
+      "quick-attack",
+      "rage"
+    ],
+    "name": "pidgeot",
+    "peso": 395,
+    "rango_captura": 45,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 15,
+    "tipo": [
+      "flying"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/1.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/3.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/19.ogg"
+    ],
+    "base": [
+      30,
+      56,
+      35,
+      25,
+      35,
+      72
+    ],
+    "felicidad": 70,
+    "habilidad": [
+      "run-away",
+      "guts",
+      "hustle"
+    ],
+    "id": 19,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "cut",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "bite",
+      "water-gun",
+      "ice-beam",
+      "blizzard",
+      "bubble-beam",
+      "counter",
+      "thunderbolt",
+      "thunder-wave"
+    ],
+    "name": "rattata",
+    "peso": 35,
+    "rango_captura": 255,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 3,
+    "tipo": [
+      "ground"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/1.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  },
+  {
+    "audio": [
+      "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/20.ogg"
+    ],
+    "base": [
+      55,
+      81,
+      60,
+      50,
+      70,
+      97
+    ],
+    "felicidad": 70,
+    "habilidad": [
+      "run-away",
+      "guts",
+      "hustle"
+    ],
+    "id": 20,
+    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+    "legendario": false,
+    "mega": [
+      false
+    ],
+    "mitico": false,
+    "movements": [
+      "swords-dance",
+      "cut",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "bite",
+      "roar",
+      "water-gun",
+      "ice-beam",
+      "blizzard",
+      "bubble-beam",
+      "hyper-beam"
+    ],
+    "name": "raticate",
+    "peso": 185,
+    "rango_captura": 127,
+    "stats": [
+      "hp",
+      "attack",
+      "defense",
+      "special-attack",
+      "special-defense",
+      "speed"
+    ],
+    "tamano": 7,
+    "tipo": [
+      "ground"
+    ],
+    "tipoe": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iii/colosseum/1.png"
+    ],
+    "versions": [
+      "red",
+      "blue",
+      "yellow",
+      "gold",
+      "silver",
+      "crystal",
+      "ruby",
+      "sapphire",
+      "emerald",
+      "firered",
+      "leafgreen",
+      "diamond",
+      "pearl",
+      "platinum",
+      "heartgold",
+      "soulsilver",
+      "black",
+      "white",
+      "black-2",
+      "white-2"
+    ]
+  }
+]
