@@ -30,7 +30,6 @@ export class HomeComponent implements OnInit {
   obtenerdato(): void {
     const numPoke = (document.getElementById('numPoke') as HTMLInputElement).value;
     
-    
     this.pokensSvc.getPokens(numPoke).subscribe({
       next: (res) => {
         this.mostrarDato = res;
@@ -45,10 +44,3 @@ export class HomeComponent implements OnInit {
   }
 
 }
-
-
-// navegacionpoke(){
-  
-//   const numPoke = (document.getElementById('numPoke') as HTMLInputElement).value;
-//     this.router.navigate(['/details', numPoke]);    
-// }

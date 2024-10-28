@@ -11,6 +11,7 @@ export class ServiceService {
 
   private pokensendp = "http://localhost:5000/pokemon"
   private pokelist = "http://localhost:5000/pokens"  
+  private pokeagregar = "http://localhost:5000/pokeAgreg"
 
   constructor( protected http: HttpClient ) { }
 
@@ -24,6 +25,14 @@ export class ServiceService {
     return this.http.get(this.pokelist).pipe(catchError(err => err))
   
   }
+
+  postPokens( newPoke:any ): Observable<any>{
+
+    return this.http.post(this.pokeagregar, newPoke).pipe(catchError(err => err))
+
+  }
+
+  
 
 }
 

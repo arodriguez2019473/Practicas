@@ -1,0 +1,70 @@
+<div class="mt-6">
+
+    <div class="grid grid-cols-2 gap-3">
+
+    <form [formGroup]="form" (ngSubmit)="guardarPoke()">
+        <p class=""><i class="fa-solid fa-signature"></i> nombre</p>
+        <input type="text" id="name" formControlName="nombre" placeholder="Nombre">
+        <br>
+        <br>
+
+        @if (form.value.nombre) {
+        <p><i class="fa-brands fa-typo3"></i> tipo</p>
+        <input type="text" id="tipo" formControlName="tipo" placeholder="tipo">
+        <br>
+        <br>
+        }
+        
+        @if (form.value.tipo) {
+        <p><i class="fa-brands fa-megaport"></i> Es mega</p>
+        <input type="text" id="esleg" formControlName="esleg" placeholder="si|no">
+        <br>
+        <br>
+        }
+        
+        @if (form.value.esleg) {
+        <p><i class="fa-regular fa-image"></i> Imagen</p>
+        <input type="text" id="img" formControlName="img" placeholder="Url Img">
+        <br>
+        <br>
+    } 
+        
+        @if (form.value.esleg) {
+        <button type="submit" class="mt-4 place-items-center border bg-white">Agregar</button>
+        
+    }    
+     <div formArrayName="movimientos">
+        @if (form.value.esleg) {
+            
+            <input type="text" id="movimientos" formControlName="movimientos" placeholder="ingrese">
+            <button type="submit">dalequi</button>    
+            <p>{{form.value.movimientos}}</p>
+            
+        }
+    </div>
+</form>
+    
+
+    <div class="grid grid-cols-2">
+    <div class="place-items-center mt-12">
+    @if (form.value.nombre) {
+
+        <a class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{form.value.nombre}}</h5>
+            @if (form.value.img) {
+            <p class="font-normal text-gray-700 dark:text-gray-400"><img [src]="form.value.img" alt="me muestro"></p>
+            }
+            <p class="font-normal text-gray-700 dark:text-gray-400">Tipo: {{form.value.tipo}}</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400">Mega: {{form.value.esleg}}</p>
+        </a>
+
+    }
+    </div>
+    </div>
+</div>
+
+
+
+
+
