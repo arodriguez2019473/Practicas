@@ -33,15 +33,17 @@
         <button type="submit" class="mt-4 place-items-center border bg-white">Agregar</button>
         
     }   @if (form.value.img) {
-    <div formArrayName="movimientos">
-        <h2>Movimientos</h2>
-        <button type="button" (click)="movimientosa()">Agregar Movimiento</button>
-      
-        <div *ngFor="let movimiento of movimientos.controls; let i=index" [formGroupName]="i">
-          <label for="alias-{{ i }}">Alias:</label>
-          <input id="alias-{{ i }}" type="text" formControlName="0">
-        </div>
-      </div>
+ 
+        <div formArrayName="movimientos">
+            <h2>Movimientos</h2>
+            <button type="button" (click)="movimientosa()">Agregar Otro Movimiento</button>
+          
+            <div *ngFor="let movimiento of movimientos.controls; let i=index">
+              <label for="alias-{{ i }}">movimiento:</label>
+              <input id="alias-{{ i }}" type="text" [formControlName]="i">
+            </div>
+          </div>
+          
     }
 </form>
     
