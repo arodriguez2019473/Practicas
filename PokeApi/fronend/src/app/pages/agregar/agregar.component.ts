@@ -21,14 +21,14 @@ export class AgregarComponent implements OnInit {
     tipo: new FormControl(null),
     img: new FormControl(null),
     esleg: new FormControl(null),
-    movimientos: new FormArray([])
+    movimientos: new FormArray([new FormControl(null)])
   });
 
   nombre: string = '';
   tipo: string = '';
   img: string = '';
   esleg: boolean = false;
-  movimientos: string = '';
+  // movimientos: string = '';
 
   constructor(
     private pokensSvc: ServiceService,
@@ -36,8 +36,11 @@ export class AgregarComponent implements OnInit {
 
   ) { }
 
-  ngOnInit(): void {
+  get movimientos() {
+    return this.form.get('movimientos') as FormArray;
+  }
 
+  ngOnInit(): void {
   }
 
   guardarPoke(): void {
@@ -50,9 +53,8 @@ export class AgregarComponent implements OnInit {
   }
 
   movimientosa(): void{
-    
-    const movimientosarray = this.form.get('movimientos') as FormArray
-      movimientosarray.push(new FormControl(null))
+
+    this.movimientos.push(new FormControl(''))
   }
 
 }
