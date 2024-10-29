@@ -1,13 +1,24 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
+from flask_migrate import Migrate
+from database import db
 import requests
 import uuid
+import random
+
 
 app = Flask(__name__)
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql+psycopg2://postgres:d3v-dtbase@10.20.20.6:5432/auki"
+
 CORS(app)
+db.init_app(app)
+migrte = Migrate(app, db)
+
 port = 5000
 
 URL = "https://pokeapi.co/api/v2/pokemon"
+
+guardados = []
 
 @app.route('/pokens', methods=['GET'])
 def getpokes():
@@ -361,6 +372,40 @@ def getpokemones(pokemon_name):
 
     return jsonify(poken),200
 
+# ------------------------------------------------------
+
+@app.route('/pokeAgreg', methods=['POST'])
+
+def agregarpoke():
+    
+    data = request.json    
+    hpramdom = random.randrange(100)
+    atqramdom:int = random.randrange(100)
+    deframdom:int = random.randrange(100)
+    speedramdom:int = random.randrange(100)
+
+
+    uuid_secret = uuid.uuid4()
+
+    newPoke = {
+        'id': str(uuid_secret),
+        'nombre':data['nombre'],
+        'tipo':data['tipo'],
+        'img':data['img'],
+        'esleg':data['esleg'],
+        'movimientos':data['movimientos'],
+        'hp': int(hpramdom),
+        'atq':int(atqramdom),
+        'def':int(deframdom),
+        'speed':int(speedramdom),
+    }
+
+    guardados.append(newPoke)
+    return jsonify(guardados)    
+
+@app.route('/getPost', methods=['GET'])
+def mostrarpokemonesCreados():
+    return jsonify(guardados)
 
 
 

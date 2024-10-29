@@ -3,67 +3,89 @@
     <div class="grid grid-cols-2 gap-3">
 
     <form [formGroup]="form" (ngSubmit)="guardarPoke()">
+
         <p class=""><i class="fa-solid fa-signature"></i> nombre</p>
-        <input type="text" id="name" formControlName="nombre" placeholder="Nombre">
-        <br>
-        <br>
+        <input type="text" id="name" formControlName="nombre" placeholder="Nombre"><br><br>
 
         @if (form.value.nombre) {
         <p><i class="fa-brands fa-typo3"></i> tipo</p>
-        <input type="text" id="tipo" formControlName="tipo" placeholder="tipo">
-        <br>
-        <br>
-        }
-        
-        @if (form.value.tipo) {
+        <input type="text" id="tipo" formControlName="tipo" placeholder="tipo"><br><br>
+    
+    }   @if (form.value.tipo) {
         <p><i class="fa-brands fa-megaport"></i> Es mega</p>
-        <input type="text" id="esleg" formControlName="esleg" placeholder="si|no">
-        <br>
-        <br>
-        }
-        
-        @if (form.value.esleg) {
+        <input type="text" id="esleg" formControlName="esleg" placeholder="si|no"><br><br>
+
+    }   @if (form.value.esleg) {
         <p><i class="fa-regular fa-image"></i> Imagen</p>
-        <input type="text" id="img" formControlName="img" placeholder="Url Img">
-        <br>
-        <br>
-    } 
-        
-        @if (form.value.esleg) {
-        <button type="submit" class="mt-4 place-items-center border bg-white">Agregar</button>
+        <input type="text" id="img" formControlName="img" placeholder="Url Img"><br><br>
         
     }   @if (form.value.img) {
- 
-        <div formArrayName="movimientos">
-            <h2>Movimientos</h2>
-            <button type="button" (click)="movimientosa()">Agregar Otro Movimiento</button>
+        
+        <div formArrayName="movimientos" class="mt-6">
+            <!-- <h2>Ingresa el movimiento para el Pokemon</h2> -->
+            <button type="button" class="text-slate-950 border border-white bg-slate-400" (click)="movimientosa()"><i class="fa-solid fa-file-circle-plus"></i> Agregar movimiento</button><br>
           
             <div *ngFor="let movimiento of movimientos.controls; let i=index">
-              <label for="alias-{{ i }}">movimiento:</label>
+              <label for="alias-{{ i }}"><i class="fa-solid fa-person-walking mt-3"></i> movimiento:</label><br>
               <input id="alias-{{ i }}" type="text" [formControlName]="i">
+              <br>
             </div>
           </div>
           
     }
+
+    @if (form.value.esleg) {
+        <button type="submit" class="mt-4 place-items-center border bg-white">Enviar pokemon</button>   
+        
+    }
+
 </form>
     
 
-    <div class="grid grid-cols-2">
+<div class="grid grid-cols-2">
     <div class="place-items-center mt-12">
-    @if (form.value.nombre) {
-
+        @if (form.value.nombre) {    
         <a class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{form.value.nombre}}</h5>
+           
             @if (form.value.img) {
             <p class="font-normal text-gray-700 dark:text-gray-400"><img [src]="form.value.img" alt="me muestro"></p>
             }
+           
             <p class="font-normal text-gray-700 dark:text-gray-400">Tipo: {{form.value.tipo}}</p>
             <p class="font-normal text-gray-700 dark:text-gray-400">Mega: {{form.value.esleg}}</p>
         </a>
-
     }
-    </div>
+
+    @if (form.value.img) {
+        <div class="ml-5 mt-10">
+            <h1 class="lg:text-2xl">Movimientos</h1>
+            <table class="border-separate">
+                <thead class="shadow-md bg-slate-600 w-">
+                    <tr>
+                        <th class="py-3 px-6">No.</th>
+                        <th class="py-3 px-16">Nombre</th>
+                        
+                    </tr>
+    
+                </thead>
+                <tbody class="border-white bg-amber-50 w-full max-w-24">
+                
+                    @for (item of form.value.movimientos; track $index;) {           
+                        
+                        <tr class="">
+                            <td class="py-3 px-6">{{ $index + 1 }}</td>
+                            <td class="py-3 px-16">{{item}}</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+    
+        </div>
+    
+    }
+        </div>
+    
     </div>
 </div>
 

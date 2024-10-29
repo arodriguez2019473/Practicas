@@ -3,7 +3,7 @@ import { ServiceService } from '../../service.service';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { FormArray, FormControl, FormControlName, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormArray, FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-agregar',
@@ -55,6 +55,10 @@ export class AgregarComponent implements OnInit {
   movimientosa(): void{
 
     this.movimientos.push(new FormControl(''))
+  }
+
+  staats(): void{
+    
   }
 
 }
