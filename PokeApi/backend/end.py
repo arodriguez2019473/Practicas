@@ -5,7 +5,7 @@ from database import db
 import requests
 import uuid
 import random
-
+import psycopg2
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql+psycopg2://postgres:d3v-dtbase@10.20.20.6:5432/auki"

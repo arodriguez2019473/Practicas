@@ -11,4 +11,4 @@ class Pokemon(db.Model):
     altura: Mapped[int] = mapped_column(Integer)
     peso: Mapped[int] = mapped_column(Integer)
     
-    
+
